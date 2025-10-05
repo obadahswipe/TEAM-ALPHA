@@ -1,285 +1,1396 @@
 import { useState } from 'react';
-import { DollarSign, Target, Users, TrendingUp, Zap, Globe, ChevronRight, CheckCircle, Calendar, Award } from 'lucide-react';
+import { DollarSign, Target, Users, TrendingUp, Zap, Globe, ChevronRight, CheckCircle, Calendar, Award, Phone, MessageSquare, Brain, Rocket, Trophy, Lock, Unlock, Star, ArrowRight, AlertCircle, Lightbulb, Crown, Timer, MapPin, Headphones, Eye } from 'lucide-react';
 
-export default function NeuraTalkBattlePlan() {
+export default function NeuraTalkUltimateSalesMachine() {
   const [activeSlide, setActiveSlide] = useState(0);
 
   const slides = [
     {
-      title: "NeuraTalk: $500K in 60 Days",
-      subtitle: "The Battle Plan to Dominate MENA AI Market",
-      icon: <Zap className="w-20 h-20" />,
+      title: "Welcome to The Machine",
+      subtitle: "The Most Powerful AI Sales System Ever Built",
+      icon: <Rocket className="w-24 h-24" />,
+      gradient: "from-purple-600 via-pink-600 to-red-600",
       content: (
         <div className="space-y-8">
+          <div className="bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 text-white p-8 rounded-2xl text-center">
+            <div className="text-6xl font-black mb-4">$560,000</div>
+            <div className="text-2xl mb-2">in 60 Days</div>
+            <div className="text-lg opacity-90">Every number. Every strategy. Every word you'll say. All here.</div>
+          </div>
+
           <div className="grid grid-cols-3 gap-6">
-            <div className="bg-gradient-to-br from-green-500 to-emerald-600 p-6 rounded-xl text-white">
-              <div className="text-4xl font-bold">$500K</div>
-              <div className="text-sm opacity-90">Revenue Target</div>
+            <div className="bg-white border-4 border-green-500 rounded-xl p-6 text-center">
+              <Trophy className="w-16 h-16 text-green-500 mx-auto mb-3" />
+              <div className="text-3xl font-bold text-green-600">115</div>
+              <div className="text-sm text-gray-600">Clients to Close</div>
             </div>
-            <div className="bg-gradient-to-br from-blue-500 to-indigo-600 p-6 rounded-xl text-white">
-              <div className="text-4xl font-bold">60</div>
-              <div className="text-sm opacity-90">Days to Execute</div>
+            <div className="bg-white border-4 border-blue-500 rounded-xl p-6 text-center">
+              <Crown className="w-16 h-16 text-blue-500 mx-auto mb-3" />
+              <div className="text-3xl font-bold text-blue-600">7</div>
+              <div className="text-sm text-gray-600">Revenue Warriors</div>
             </div>
-            <div className="bg-gradient-to-br from-purple-500 to-pink-600 p-6 rounded-xl text-white">
-              <div className="text-4xl font-bold">3</div>
-              <div className="text-sm opacity-90">Markets</div>
+            <div className="bg-white border-4 border-purple-500 rounded-xl p-6 text-center">
+              <Zap className="w-16 h-16 text-purple-500 mx-auto mb-3" />
+              <div className="text-3xl font-bold text-purple-600">60</div>
+              <div className="text-sm text-gray-600">Days to Domination</div>
             </div>
           </div>
-          <div className="bg-yellow-50 border-l-4 border-yellow-500 p-4">
-            <p className="text-yellow-800 font-semibold">Mission: Prove NeuraTalk can scale from 0 to $500K in 60 days across Egypt, UAE, and KSA</p>
+
+          <div className="bg-gray-900 text-white p-6 rounded-xl">
+            <div className="flex items-center gap-3 mb-4">
+              <Lock className="w-8 h-8 text-yellow-400" />
+              <div className="text-xl font-bold">What You're About to Learn:</div>
+            </div>
+            <div className="grid grid-cols-2 gap-3 text-sm">
+              <div className="flex items-start gap-2">
+                <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
+                <span>Your exact script (word-for-word)</span>
+              </div>
+              <div className="flex items-start gap-2">
+                <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
+                <span>Live demo method (clients test it themselves)</span>
+              </div>
+              <div className="flex items-start gap-2">
+                <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
+                <span>Who to target (exact businesses)</span>
+              </div>
+              <div className="flex items-start gap-2">
+                <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
+                <span>Objection destroyer framework</span>
+              </div>
+              <div className="flex items-start gap-2">
+                <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
+                <span>Pricing psychology (when to discount, when to hold)</span>
+              </div>
+              <div className="flex items-start gap-2">
+                <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
+                <span>Your daily schedule (hour-by-hour)</span>
+              </div>
+              <div className="flex items-start gap-2">
+                <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
+                <span>How much YOU will make (commission breakdown)</span>
+              </div>
+              <div className="flex items-start gap-2">
+                <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
+                <span>Secret weapons no competitor has</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-r from-green-500 to-emerald-600 text-white p-6 rounded-xl text-center">
+            <div className="text-2xl font-bold mb-2">🚀 This Isn't Theory. This Is War.</div>
+            <div className="text-lg opacity-90">Every page is a weapon. Every tactic is proven. Let's print money.</div>
           </div>
         </div>
       )
     },
     {
-      title: "The Team Structure",
-      subtitle: "Each Person = One Country = Money Machine",
-      icon: <Users className="w-16 h-16" />,
+      title: "Your Personal Mission & Money",
+      subtitle: "Know EXACTLY What You'll Make",
+      icon: <DollarSign className="w-20 h-20" />,
+      gradient: "from-green-500 to-emerald-600",
       content: (
         <div className="space-y-6">
-          <div className="grid grid-cols-3 gap-4">
-            <div className="bg-white border-2 border-green-500 rounded-lg p-6">
-              <div className="text-green-600 font-bold text-xl mb-2">🇪🇬 EGYPT LEAD</div>
-              <div className="text-sm space-y-2">
-                <div>• 30 clients in 14 days</div>
-                <div>• Price: $5,000/year</div>
-                <div>• Target: $150K</div>
-                <div className="pt-2 border-t mt-2">
-                  <div className="font-bold text-green-600">Your profit: $105K</div>
+          <div className="bg-yellow-50 border-l-4 border-yellow-500 p-4">
+            <div className="font-bold text-yellow-800 text-lg">🎯 YOUR ROLE: You are a Revenue Warrior. Your job is simple: Close 3 clients every 10 days.</div>
+          </div>
+
+          <div className="grid grid-cols-7 gap-3">
+            <div className="bg-gradient-to-br from-green-500 to-emerald-600 text-white p-4 rounded-lg text-center">
+              <MapPin className="w-8 h-8 mx-auto mb-2" />
+              <div className="text-xs font-semibold mb-1">EGYPT 1</div>
+              <div className="text-2xl font-bold">$15K</div>
+              <div className="text-xs opacity-90 mt-1">18 clients</div>
+              <div className="text-xs opacity-75">In-person</div>
+            </div>
+            <div className="bg-gradient-to-br from-green-500 to-emerald-600 text-white p-4 rounded-lg text-center">
+              <MapPin className="w-8 h-8 mx-auto mb-2" />
+              <div className="text-xs font-semibold mb-1">EGYPT 2</div>
+              <div className="text-2xl font-bold">$15K</div>
+              <div className="text-xs opacity-90 mt-1">18 clients</div>
+              <div className="text-xs opacity-75">In-person</div>
+            </div>
+            <div className="bg-gradient-to-br from-blue-500 to-indigo-600 text-white p-4 rounded-lg text-center">
+              <MapPin className="w-8 h-8 mx-auto mb-2" />
+              <div className="text-xs font-semibold mb-1">EGYPT 3</div>
+              <div className="text-2xl font-bold">$8K</div>
+              <div className="text-xs opacity-90 mt-1">12 clients</div>
+              <div className="text-xs opacity-75">Part-time</div>
+            </div>
+            <div className="bg-gradient-to-br from-orange-500 to-red-600 text-white p-4 rounded-lg text-center">
+              <Globe className="w-8 h-8 mx-auto mb-2" />
+              <div className="text-xs font-semibold mb-1">TURKEY</div>
+              <div className="text-2xl font-bold">$6.8K</div>
+              <div className="text-xs opacity-90 mt-1">17 clients</div>
+              <div className="text-xs opacity-75">Remote</div>
+            </div>
+            <div className="bg-gradient-to-br from-purple-500 to-pink-600 text-white p-4 rounded-lg text-center">
+              <Globe className="w-8 h-8 mx-auto mb-2" />
+              <div className="text-xs font-semibold mb-1">SYRIA</div>
+              <div className="text-2xl font-bold">$3.6K</div>
+              <div className="text-xs opacity-90 mt-1">12 clients</div>
+              <div className="text-xs opacity-75">Remote</div>
+            </div>
+            <div className="bg-gradient-to-br from-indigo-500 to-purple-600 text-white p-4 rounded-lg text-center">
+              <Globe className="w-8 h-8 mx-auto mb-2" />
+              <div className="text-xs font-semibold mb-1">VIENNA</div>
+              <div className="text-2xl font-bold">$6K</div>
+              <div className="text-xs opacity-90 mt-1">11 clients</div>
+              <div className="text-xs opacity-75">Remote EU</div>
+            </div>
+            <div className="bg-gradient-to-br from-yellow-500 to-orange-600 text-white p-4 rounded-lg text-center">
+              <Crown className="w-8 h-8 mx-auto mb-2" />
+              <div className="text-xs font-semibold mb-1">LEADER</div>
+              <div className="text-2xl font-bold">$25K</div>
+              <div className="text-xs opacity-90 mt-1">KSA mission</div>
+              <div className="text-xs opacity-75">Week 5-8</div>
+            </div>
+          </div>
+
+          <div className="bg-white border-2 border-gray-200 rounded-xl p-6">
+            <div className="font-bold text-xl mb-4">💰 Your Personal Income Projection (10% Commission)</div>
+            <div className="space-y-3">
+              <div className="flex justify-between items-center pb-3 border-b">
+                <div>
+                  <div className="font-semibold">If you close 3 clients every 10 days (Egypt - $5K each):</div>
+                  <div className="text-sm text-gray-600">18 clients × $5,000 × 10% commission</div>
+                </div>
+                <div className="text-3xl font-bold text-green-600">$9,000</div>
+              </div>
+              <div className="flex justify-between items-center pb-3 border-b">
+                <div>
+                  <div className="font-semibold">If you close 3 clients every 10 days (Turkey - $4K each):</div>
+                  <div className="text-sm text-gray-600">17 clients × $4,000 × 10% commission</div>
+                </div>
+                <div className="text-3xl font-bold text-orange-600">$6,800</div>
+              </div>
+              <div className="flex justify-between items-center pb-3 border-b">
+                <div>
+                  <div className="font-semibold">If you go to KSA (premium deals - $25K each):</div>
+                  <div className="text-sm text-gray-600">4 clients × $25,000 × 10% commission</div>
+                </div>
+                <div className="text-3xl font-bold text-purple-600">$10,000</div>
+              </div>
+              <div className="flex justify-between items-center pt-3 bg-gradient-to-r from-green-500 to-emerald-600 text-white p-4 rounded-lg">
+                <div className="font-bold text-xl">PLUS Base Salary (2 months):</div>
+                <div className="text-3xl font-bold">$1,000</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-r from-orange-500 to-red-600 text-white p-6 rounded-xl">
+            <div className="text-2xl font-bold mb-3">🔥 Bottom Line: Work Hard = Life-Changing Money</div>
+            <div className="grid grid-cols-3 gap-4 text-center">
+              <div className="bg-white/20 p-4 rounded-lg">
+                <div className="text-sm opacity-90 mb-1">Minimum (Part-time)</div>
+                <div className="text-3xl font-bold">$4K</div>
+                <div className="text-xs opacity-75">in 60 days</div>
+              </div>
+              <div className="bg-white/20 p-4 rounded-lg">
+                <div className="text-sm opacity-90 mb-1">Expected (Full-time)</div>
+                <div className="text-3xl font-bold">$10K</div>
+                <div className="text-xs opacity-75">in 60 days</div>
+              </div>
+              <div className="bg-white/20 p-4 rounded-lg">
+                <div className="text-sm opacity-90 mb-1">Beast Mode (KSA)</div>
+                <div className="text-3xl font-bold">$20K+</div>
+                <div className="text-xs opacity-75">in 60 days</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )
+    },
+    {
+      title: "The Secret Weapon: Live Demo Phone",
+      subtitle: "Why You'll Close 3X More Than Competitors",
+      icon: <Phone className="w-20 h-20" />,
+      gradient: "from-blue-500 to-indigo-600",
+      content: (
+        <div className="space-y-6">
+          <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white p-6 rounded-xl">
+            <div className="flex items-center gap-4 mb-4">
+              <Lightbulb className="w-12 h-12" />
+              <div className="text-2xl font-bold">THE GAME-CHANGER: Each of You Gets a Demo Phone Number</div>
+            </div>
+            <div className="text-lg opacity-90">This isn't a video demo. This is a LIVE AI that prospects call RIGHT NOW in front of you.</div>
+          </div>
+
+          <div className="grid grid-cols-2 gap-6">
+            <div className="bg-red-50 border-2 border-red-300 rounded-xl p-6">
+              <div className="flex items-center gap-2 mb-3">
+                <AlertCircle className="w-6 h-6 text-red-600" />
+                <div className="font-bold text-red-600 text-lg">❌ Old Way (What Competitors Do)</div>
+              </div>
+              <div className="space-y-2 text-sm text-gray-700">
+                <div>• Show a video demo or PowerPoint</div>
+                <div>• "Trust me, it works"</div>
+                <div>• Client is skeptical</div>
+                <div>• "Let me think about it"</div>
+                <div>• They never buy</div>
+              </div>
+              <div className="mt-4 p-3 bg-red-100 rounded text-red-800 text-xs">
+                <strong>Result:</strong> 5% close rate, wasted time
+              </div>
+            </div>
+
+            <div className="bg-green-50 border-2 border-green-500 rounded-xl p-6">
+              <div className="flex items-center gap-2 mb-3">
+                <CheckCircle className="w-6 h-6 text-green-600" />
+                <div className="font-bold text-green-600 text-lg">✅ Your Way (The NeuraTalk Method)</div>
+              </div>
+              <div className="space-y-2 text-sm text-gray-700">
+                <div>• Hand them YOUR phone</div>
+                <div>• "Call this number right now"</div>
+                <div>• AI answers in 2 seconds</div>
+                <div>• Client's jaw drops</div>
+                <div>• They buy on the spot</div>
+              </div>
+              <div className="mt-4 p-3 bg-green-100 rounded text-green-800 text-xs">
+                <strong>Result:</strong> 30-40% close rate, instant trust
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-gray-900 text-white p-6 rounded-xl">
+            <div className="font-bold text-xl mb-4">📱 How The Demo Phone Works:</div>
+            <div className="space-y-4">
+              <div className="flex gap-4">
+                <div className="bg-blue-500 rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0 font-bold">1</div>
+                <div>
+                  <div className="font-semibold mb-1">Each Person Gets a Number</div>
+                  <div className="text-sm opacity-90">+20-XXX-XXXX (Egypt), +90-XXX-XXXX (Turkey), etc. This number is connected to a LIVE AI receptionist.</div>
+                </div>
+              </div>
+              <div className="flex gap-4">
+                <div className="bg-blue-500 rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0 font-bold">2</div>
+                <div>
+                  <div className="font-semibold mb-1">During Your Pitch</div>
+                  <div className="text-sm opacity-90">"Instead of me explaining, why don't YOU test it? Call this number right now. Ask it anything in Arabic or English."</div>
+                </div>
+              </div>
+              <div className="flex gap-4">
+                <div className="bg-blue-500 rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0 font-bold">3</div>
+                <div>
+                  <div className="font-semibold mb-1">They Call & Experience Magic</div>
+                  <div className="text-sm opacity-90">AI answers instantly, understands them, books a fake appointment. They're AMAZED because it's REAL.</div>
+                </div>
+              </div>
+              <div className="flex gap-4">
+                <div className="bg-green-500 rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0 font-bold">4</div>
+                <div>
+                  <div className="font-semibold mb-1">You Close Immediately</div>
+                  <div className="text-sm opacity-90">"This is what YOUR customers will experience. Want it? I can set it up today."</div>
                 </div>
               </div>
             </div>
-            <div className="bg-white border-2 border-blue-500 rounded-lg p-6">
-              <div className="text-blue-600 font-bold text-xl mb-2">🇦🇪 UAE LEAD</div>
-              <div className="text-sm space-y-2">
-                <div>• 12 clients in 30 days</div>
-                <div>• Price: $20,000/year</div>
-                <div>• Target: $240K</div>
-                <div className="pt-2 border-t mt-2">
-                  <div className="font-bold text-blue-600">Your profit: $180K</div>
+          </div>
+
+          <div className="bg-purple-50 border-l-4 border-purple-500 p-4">
+            <div className="font-bold text-purple-800 mb-2">🧠 Psychology: Why This Works</div>
+            <div className="text-sm text-purple-900 space-y-1">
+              <div>• <strong>Seeing is believing:</strong> They don't imagine it, they EXPERIENCE it</div>
+              <div>• <strong>Removes skepticism:</strong> No "does it really work?" – they just tested it</div>
+              <div>• <strong>Creates urgency:</strong> They want it NOW before competitors get it</div>
+              <div>• <strong>Builds trust:</strong> You're confident enough to let them test it themselves</div>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white p-6 rounded-xl text-center">
+            <div className="text-2xl font-bold mb-2">⚡ This ONE tactic increases your close rate from 10% to 30%+</div>
+            <div className="text-lg opacity-90">Same effort. 3X more sales. This is your unfair advantage.</div>
+          </div>
+        </div>
+      )
+    },
+    {
+      title: "Who to Target & Where to Find Them",
+      subtitle: "Your Exact Prospect List",
+      icon: <Target className="w-20 h-20" />,
+      gradient: "from-orange-500 to-red-600",
+      content: (
+        <div className="space-y-6">
+          <div className="bg-orange-50 border-l-4 border-orange-500 p-4">
+            <div className="font-bold text-orange-800 text-lg">🎯 Rule #1: Target businesses that LOSE MONEY from missed calls</div>
+          </div>
+
+          <div className="grid grid-cols-2 gap-6">
+            <div className="space-y-4">
+              <div className="bg-green-500 text-white p-4 rounded-lg">
+                <div className="font-bold text-lg mb-2">✅ PERFECT TARGETS (High-Value Calls)</div>
+              </div>
+              <div className="bg-white border-2 border-green-500 rounded-lg p-4 space-y-3">
+                <div>
+                  <div className="font-semibold text-green-700">🏥 Medical Clinics & Pharmacies</div>
+                  <div className="text-sm text-gray-600">Every missed call = lost patient ($50-$200)</div>
+                  <div className="text-xs text-gray-500 mt-1">Where: Google Maps "pharmacy near me", walk-in</div>
+                </div>
+                <div>
+                  <div className="font-semibold text-green-700">🏠 Real Estate Agencies</div>
+                  <div className="text-sm text-gray-600">Every missed call = lost commission ($500-$5,000)</div>
+                  <div className="text-xs text-gray-500 mt-1">Where: LinkedIn, office buildings</div>
+                </div>
+                <div>
+                  <div className="font-semibold text-green-700">🚗 Car Dealerships & Service Centers</div>
+                  <div className="text-sm text-gray-600">Appointments = revenue ($200-$2,000 per)</div>
+                  <div className="text-xs text-gray-500 mt-1">Where: Showrooms, LinkedIn</div>
+                </div>
+                <div>
+                  <div className="font-semibold text-green-700">🍽️ Restaurants (Premium/Mid-Range)</div>
+                  <div className="text-sm text-gray-600">Reservations drive revenue</div>
+                  <div className="text-xs text-gray-500 mt-1">Where: Instagram, Google, in-person</div>
+                </div>
+                <div>
+                  <div className="font-semibold text-green-700">💇 Salons & Spas (High-End)</div>
+                  <div className="text-sm text-gray-600">Appointment-based, high customer value</div>
+                  <div className="text-xs text-gray-500 mt-1">Where: Instagram, walk-in to malls</div>
                 </div>
               </div>
             </div>
-            <div className="bg-white border-2 border-purple-500 rounded-lg p-6">
-              <div className="text-purple-600 font-bold text-xl mb-2">🇸🇦 KSA LEAD</div>
-              <div className="text-sm space-y-2">
-                <div>• 8 clients in 30 days</div>
-                <div>• Price: $25,000/year</div>
-                <div>• Target: $200K</div>
-                <div className="pt-2 border-t mt-2">
-                  <div className="font-bold text-purple-600">Your profit: $144K</div>
+
+            <div className="space-y-4">
+              <div className="bg-red-500 text-white p-4 rounded-lg">
+                <div className="font-bold text-lg mb-2">❌ AVOID (Waste of Time)</div>
+              </div>
+              <div className="bg-white border-2 border-red-500 rounded-lg p-4 space-y-3">
+                <div>
+                  <div className="font-semibold text-red-700">🏪 Small Grocery Stores</div>
+                  <div className="text-sm text-gray-600">Don't get many calls, no appointment-based revenue</div>
+                </div>
+                <div>
+                  <div className="font-semibold text-red-700">👕 Clothing Boutiques (Small)</div>
+                  <div className="text-sm text-gray-600">Walk-in business, calls aren't valuable</div>
+                </div>
+                <div>
+                  <div className="font-semibold text-red-700">☕ Small Cafes/Kiosks</div>
+                  <div className="text-sm text-gray-600">No reservations, low margins, can't afford $5K</div>
+                </div>
+                <div>
+                  <div className="font-semibold text-red-700">🔧 Repair Shops (Very Small)</div>
+                  <div className="text-sm text-gray-600">Owner answers phone himself, won't pay</div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="bg-gradient-to-r from-orange-500 to-red-500 text-white p-6 rounded-xl">
-            <div className="text-3xl font-bold">Total Revenue: $590K</div>
-            <div className="text-xl mt-2">Total Profit: $429K in 60 days</div>
+
+          <div className="bg-gray-900 text-white p-6 rounded-xl">
+            <div className="font-bold text-xl mb-4">🗺️ How to Find 50 Prospects in 30 Minutes:</div>
+            <div className="grid grid-cols-2 gap-6">
+              <div>
+                <div className="font-semibold mb-3 text-blue-400">FOR IN-PERSON (Egypt):</div>
+                <div className="space-y-2 text-sm">
+                  <div className="flex items-start gap-2">
+                    <div className="bg-blue-500 rounded px-2 py-0.5 text-xs font-bold">1</div>
+                    <div>Open Google Maps → Search "pharmacy" or "clinic" → Get 50 results with addresses</div>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <div className="bg-blue-500 rounded px-2 py-0.5 text-xs font-bold">2</div>
+                    <div>Filter by area (New Cairo, Zamalek, etc.) → Save addresses</div>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <div className="bg-blue-500 rounded px-2 py-0.5 text-xs font-bold">3</div>
+                    <div>Visit 10/day (morning 5, afternoon 5)</div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className="font-semibold mb-3 text-purple-400">FOR REMOTE (Turkey/Syria/Vienna):</div>
+                <div className="space-y-2 text-sm">
+                  <div className="flex items-start gap-2">
+                    <div className="bg-purple-500 rounded px-2 py-0.5 text-xs font-bold">1</div>
+                    <div>LinkedIn → Search "clinic owner Istanbul" or "pharmacy manager" → 100+ results</div>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <div className="bg-purple-500 rounded px-2 py-0.5 text-xs font-bold">2</div>
+                    <div>Send connection request + message (we'll give you template)</div>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <div className="bg-purple-500 rounded px-2 py-0.5 text-xs font-bold">3</div>
+                    <div>Book Zoom demos → Show live phone demo over video</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-r from-green-500 to-emerald-600 text-white p-6 rounded-xl">
+            <div className="font-bold text-xl mb-3">💡 Pro Tip: The "3-Business Rule"</div>
+            <div className="text-lg opacity-90 mb-3">If you see 3 of the same type of business on one street (3 pharmacies, 3 clinics), TARGET THAT STREET.</div>
+            <div className="text-sm opacity-80">Why? Competition is HIGH. They're ALL losing customers to each other. Whoever gets your AI first WINS.</div>
           </div>
         </div>
       )
     },
     {
-      title: "Week 1-2: Egypt Blitz",
-      subtitle: "Proof of Concept + Cash Injection",
-      icon: <Target className="w-16 h-16" />,
+      title: "The Perfect Pitch (Word-for-Word)",
+      subtitle: "What to Say in the First 60 Seconds",
+      icon: <MessageSquare className="w-20 h-20" />,
+      gradient: "from-indigo-500 to-purple-600",
       content: (
-        <div className="space-y-4">
-          <div className="bg-green-50 p-6 rounded-lg">
-            <div className="font-bold text-xl text-green-700 mb-4">EGYPT LEAD MISSION:</div>
-            <div className="space-y-3 text-sm">
-              <div className="flex items-start gap-3">
-                <CheckCircle className="w-5 h-5 text-green-600 mt-0.5" />
-                <div><span className="font-semibold">Day 1-3:</span> Contact 50 businesses (pharmacies, clinics, restaurants). Close 10 at $5K each = $50K</div>
-              </div>
-              <div className="flex items-start gap-3">
-                <CheckCircle className="w-5 h-5 text-green-600 mt-0.5" />
-                <div><span className="font-semibold">Day 4-7:</span> Contact 50 more. Close 10 = $50K. Total: $100K</div>
-              </div>
-              <div className="flex items-start gap-3">
-                <CheckCircle className="w-5 h-5 text-green-600 mt-0.5" />
-                <div><span className="font-semibold">Day 8-14:</span> Contact 50 more. Close 10 = $50K. Total: $150K</div>
-              </div>
-            </div>
+        <div className="space-y-6">
+          <div className="bg-purple-50 border-l-4 border-purple-500 p-4">
+            <div className="font-bold text-purple-800 text-lg">🎯 Your Goal: Get them to test the demo phone in 60 seconds</div>
           </div>
-          
-          <div className="grid grid-cols-2 gap-4">
-            <div className="bg-white border border-gray-200 p-4 rounded-lg">
-              <div className="font-semibold mb-2">The Offer:</div>
-              <div className="text-sm space-y-1">
-                <div>✅ $5,000 annual (pay upfront)</div>
-                <div>✅ WhatsApp + Voice AI</div>
-                <div>✅ "Founding member rate - ends this week"</div>
-                <div>✅ Install within 48 hours</div>
-              </div>
+
+          <div className="bg-white border-4 border-indigo-500 rounded-xl p-6">
+            <div className="bg-indigo-500 text-white px-4 py-2 rounded-t-lg -mt-6 -mx-6 mb-4">
+              <div className="font-bold text-lg">THE 60-SECOND PITCH (Copy This Exactly)</div>
             </div>
-            <div className="bg-white border border-gray-200 p-4 rounded-lg">
-              <div className="font-semibold mb-2">Daily Actions:</div>
-              <div className="text-sm space-y-1">
-                <div>• 10 AM: Visit 5 businesses</div>
-                <div>• 2 PM: Visit 5 more businesses</div>
-                <div>• 6 PM: Follow up on demos</div>
-                <div>• Close 2-3 deals/day minimum</div>
+            
+            <div className="space-y-4">
+              <div className="bg-gray-50 p-4 rounded-lg">
+                <div className="text-xs font-semibold text-gray-500 mb-2">OPENING (10 seconds)</div>
+                <div className="text-lg font-medium">"Hi! I help [pharmacies/clinics/restaurants] capture every single customer call, even when you're busy or closed. Can I show you something amazing real quick?"</div>
+              </div>
+
+              <div className="bg-blue-50 p-4 rounded-lg">
+                <div className="text-xs font-semibold text-gray-500 mb-2">PAIN POINT (15 seconds)</div>
+                <div className="text-lg font-medium">"Right now, you're probably missing 15-20 calls a day. That's customers who hang up and call your competitor. Each one is worth [EGP 100-500]. You're losing [EGP 1,500-10,000] EVERY DAY."</div>
+              </div>
+
+              <div className="bg-green-50 p-4 rounded-lg">
+                <div className="text-xs font-semibold text-gray-500 mb-2">THE DEMO OFFER (20 seconds)</div>
+                <div className="text-lg font-medium">"Here's the solution: An AI receptionist that answers in 2 seconds, speaks Arabic and English, takes orders, books appointments—24/7. Instead of me explaining, why don't YOU test it right now? Call this number. Ask it anything."</div>
+                <div className="mt-3 p-3 bg-white rounded border-2 border-green-500">
+                  <div className="text-sm font-semibold text-green-700">👉 HAND THEM YOUR PHONE</div>
+                  <div className="text-xs text-gray-600 mt-1">Show your demo number on screen, put it on speaker, let them call</div>
+                </div>
+              </div>
+
+              <div className="bg-purple-50 p-4 rounded-lg">
+                <div className="text-xs font-semibold text-gray-500 mb-2">AFTER THEY TEST (15 seconds)</div>
+                <div className="text-lg font-medium">"See how fast that was? That's what YOUR customers will experience. It costs [EGP 250,000/year OR $5,000], which is less than hiring one person—but this works 24/7 and never gets sick. Want it?"</div>
               </div>
             </div>
           </div>
 
-          <div className="bg-yellow-100 border-l-4 border-yellow-500 p-4">
-            <div className="font-bold text-yellow-800">Week 2 Result: $150K cash + 30 case studies for Gulf expansion</div>
-          </div>
-        </div>
-      )
-    },
-    {
-      title: "Week 3-4: UAE Launch",
-      subtitle: "Premium Market Entry with Egypt Proof",
-      icon: <Globe className="w-16 h-16" />,
-      content: (
-        <div className="space-y-4">
-          <div className="bg-blue-50 p-6 rounded-lg">
-            <div className="font-bold text-xl text-blue-700 mb-4">UAE LEAD MISSION:</div>
-            <div className="space-y-3 text-sm">
-              <div className="flex items-start gap-3">
-                <CheckCircle className="w-5 h-5 text-blue-600 mt-0.5" />
-                <div><span className="font-semibold">Day 15-21:</span> LinkedIn outreach to 100 Dubai businesses. Book 20 demos. Close 6 at $20K = $120K</div>
-              </div>
-              <div className="flex items-start gap-3">
-                <CheckCircle className="w-5 h-5 text-blue-600 mt-0.5" />
-                <div><span className="font-semibold">Day 22-28:</span> Fly to Dubai. In-person demos. Close 6 more = $120K. Total: $240K</div>
-              </div>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-2 gap-4">
-            <div className="bg-white border border-gray-200 p-4 rounded-lg">
-              <div className="font-semibold mb-2">Target Businesses:</div>
-              <div className="text-sm space-y-1">
-                <div>🏥 Premium medical clinics (JLT, Marina, Downtown)</div>
-                <div>🏨 Boutique hotels (50-200 rooms)</div>
-                <div>🚗 Luxury car dealerships</div>
-                <div>🏠 High-end real estate agencies</div>
-              </div>
-            </div>
-            <div className="bg-white border border-gray-200 p-4 rounded-lg">
-              <div className="font-semibold mb-2">The Pitch:</div>
-              <div className="text-sm space-y-1">
-                <div>"We serve 30 businesses in Egypt"</div>
-                <div>"Handling 3,000+ calls daily"</div>
-                <div>"Taking 15 UAE clients this month"</div>
-                <div>"$20K annual - locks in today's AI pricing"</div>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-blue-100 border-l-4 border-blue-500 p-4">
-            <div className="font-bold text-blue-800">Investment: $5K (flights, hotel). Return: $240K. ROI: 4,700%</div>
-          </div>
-        </div>
-      )
-    },
-    {
-      title: "Week 3-4: KSA Launch",
-      subtitle: "Parallel Attack on Saudi Market",
-      icon: <TrendingUp className="w-16 h-16" />,
-      content: (
-        <div className="space-y-4">
-          <div className="bg-purple-50 p-6 rounded-lg">
-            <div className="font-bold text-xl text-purple-700 mb-4">KSA LEAD MISSION:</div>
-            <div className="space-y-3 text-sm">
-              <div className="flex items-start gap-3">
-                <CheckCircle className="w-5 h-5 text-purple-600 mt-0.5" />
-                <div><span className="font-semibold">Day 15-21:</span> LinkedIn + cold calling 100 Riyadh/Jeddah businesses. Close 4 at $25K = $100K</div>
-              </div>
-              <div className="flex items-start gap-3">
-                <CheckCircle className="w-5 h-5 text-purple-600 mt-0.5" />
-                <div><span className="font-semibold">Day 22-28:</span> Fly to Riyadh. Enterprise demos. Close 4 more = $100K. Total: $200K</div>
-              </div>
-            </div>
+          <div className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white p-6 rounded-xl">
+            <div className="font-bold text-xl mb-3">🔥 The Secret: They Sell Themselves</div>
+            <div className="text-lg opacity-90">You're not convincing them. You're SHOWING them. The AI does the selling. You just facilitate the test.</div>
           </div>
 
           <div className="grid grid-cols-2 gap-4">
-            <div className="bg-white border border-gray-200 p-4 rounded-lg">
-              <div className="font-semibold mb-2">Target Businesses:</div>
-              <div className="text-sm space-y-1">
-                <div>🏢 Medical centers (premium districts)</div>
-                <div>🏪 Luxury retail chains</div>
-                <div>💎 High-end jewelry stores</div>
-                <div>🍽️ Premium restaurants (5-star hotels)</div>
+            <div className="bg-white border-2 border-gray-200 rounded-lg p-4">
+              <div className="font-bold mb-3">📱 If They're Skeptical:</div>
+              <div className="text-sm space-y-2">
+                <div><strong>Them:</strong> "Is this real or pre-recorded?"</div>
+                <div className="text-blue-600"><strong>You:</strong> "Ask it something random—your name, today's date, a weird question. You'll see it's live."</div>
+                <div className="mt-3"><strong>Them:</strong> "How much does it cost?"</div>
+                <div className="text-blue-600"><strong>You:</strong> "Test it first. If you love it, we'll talk price. If you don't, no problem."</div>
               </div>
             </div>
-            <div className="bg-white border border-gray-200 p-4 rounded-lg">
-              <div className="font-semibold mb-2">Why $25K (not $20K)?</div>
-              <div className="text-sm space-y-1">
-                <div>• KSA has higher purchasing power</div>
-                <div>• Less price-sensitive than UAE</div>
-                <div>• Prefer premium positioning</div>
-                <div>• "Most expensive = best quality" mindset</div>
+
+            <div className="bg-white border-2 border-gray-200 rounded-lg p-4">
+              <div className="font-bold mb-3">💰 When They Ask About Price:</div>
+              <div className="text-sm space-y-2">
+                <div className="p-2 bg-green-50 rounded">
+                  <strong className="text-green-700">Egypt:</strong> "EGP 250,000 for the year. That's EGP 20,800/month—cheaper than a receptionist who only works 8 hours."
+                </div>
+                <div className="p-2 bg-blue-50 rounded">
+                  <strong className="text-blue-700">Turkey:</strong> "$4,000 for the year. Split into payments if you want."
+                </div>
+                <div className="p-2 bg-purple-50 rounded">
+                  <strong className="text-purple-700">Syria:</strong> "$2,500 for the year. Saves you $10,000+ in lost calls."
+                </div>
+                <div className="p-2 bg-orange-50 rounded">
+                  <strong className="text-orange-700">KSA/Gulf:</strong> "$25,000 for the year. One missed VIP client costs you more than that."
+                </div>
               </div>
             </div>
           </div>
 
-          <div className="bg-purple-100 border-l-4 border-purple-500 p-4">
-            <div className="font-bold text-purple-800">Week 4 Total: UAE $240K + KSA $200K = $440K cumulative</div>
+          <div className="bg-gray-900 text-white p-6 rounded-xl">
+            <div className="font-bold text-xl mb-4">🎭 Role Play Practice (Do This Daily)</div>
+            <div className="space-y-3 text-sm">
+              <div className="flex gap-3">
+                <div className="bg-blue-500 rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 font-bold">1</div>
+                <div>Partner up with another team member each morning</div>
+              </div>
+              <div className="flex gap-3">
+                <div className="bg-blue-500 rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 font-bold">2</div>
+                <div>One person plays the business owner (skeptical), other does the pitch</div>
+              </div>
+              <div className="flex gap-3">
+                <div className="bg-blue-500 rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 font-bold">3</div>
+                <div>Practice until you can do it WITHOUT looking at notes</div>
+              </div>
+              <div className="flex gap-3">
+                <div className="bg-blue-500 rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 font-bold">4</div>
+                <div>The person who does it best teaches the rest of the team</div>
+              </div>
+            </div>
           </div>
         </div>
       )
     },
     {
-      title: "Week 5-8: Whale Hunting",
-      subtitle: "Enterprise Deals for The Win",
-      icon: <Award className="w-16 h-16" />,
+      title: "Objection Destroyer Framework",
+      subtitle: "What to Say When They Hesitate",
+      icon: <Brain className="w-20 h-20" />,
+      gradient: "from-red-500 to-pink-600",
       content: (
-        <div className="space-y-4">
-          <div className="bg-gradient-to-r from-orange-500 to-red-500 text-white p-6 rounded-lg">
-            <div className="font-bold text-2xl mb-4">ALL TEAMS: Hunt for 2-3 Whales</div>
-            <div className="text-sm opacity-90">While maintaining regular sales, pursue massive contracts</div>
+        <div className="space-y-6">
+          <div className="bg-red-50 border-l-4 border-red-500 p-4">
+            <div className="font-bold text-red-800 text-lg">⚔️ Objections are BUYING SIGNALS. They're interested, just scared.</div>
           </div>
 
-          <div className="grid grid-cols-3 gap-4">
-            <div className="bg-white border-2 border-green-500 rounded-lg p-4">
-              <div className="font-bold text-green-600 mb-2">EGYPT WHALES</div>
-              <div className="text-sm space-y-1">
-                <div>🏥 Hospital chains (Cleopatra, As-Salam)</div>
-                <div>🏨 Hotel groups (Steigenberger)</div>
-                <div>💰 Target: $30K-50K each</div>
+          <div className="space-y-4">
+            <div className="bg-white border-2 border-gray-300 rounded-xl overflow-hidden">
+              <div className="bg-gradient-to-r from-purple-500 to-pink-500 text-white p-4">
+                <div className="font-bold text-lg">🚫 Objection #1: "Let me think about it"</div>
+              </div>
+              <div className="p-6 space-y-3">
+                <div className="bg-red-50 p-3 rounded">
+                  <div className="text-sm font-semibold text-red-700">❌ BAD Response:</div>
+                  <div className="text-sm text-gray-700">"Okay, no problem. Call me when you're ready."</div>
+                  <div className="text-xs text-red-600 mt-1">Result: You lost them forever</div>
+                </div>
+                <div className="bg-green-50 p-3 rounded">
+                  <div className="text-sm font-semibold text-green-700">✅ GOOD Response:</div>
+                  <div className="text-sm text-gray-700">"Of course! What specifically do you need to think about—is it the price, the technology, or the timing?"</div>
+                  <div className="text-xs text-green-600 mt-1">Why it works: Forces them to reveal the REAL objection</div>
+                </div>
+                <div className="bg-blue-50 p-3 rounded">
+                  <div className="text-sm font-semibold text-blue-700">🎯 Then Handle the Real Objection:</div>
+                  <div className="text-sm text-gray-700">
+                    <div>• If price: "Let's break it down per day. EGP 685/day to capture 100% of calls. Worth it?"</div>
+                    <div>• If technology: "You just tested it yourself. What concerns do you have?"</div>
+                    <div>• If timing: "Actually, starting now is perfect because [reason]. When would be better—and why?"</div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="bg-white border-2 border-blue-500 rounded-lg p-4">
-              <div className="font-bold text-blue-600 mb-2">UAE WHALES</div>
-              <div className="text-sm space-y-1">
-                <div>🏥 NMC Healthcare, Mediclinic</div>
-                <div>🏨 Jumeirah Group, Rotana</div>
-                <div>💰 Target: $75K-100K each</div>
+
+            <div className="bg-white border-2 border-gray-300 rounded-xl overflow-hidden">
+              <div className="bg-gradient-to-r from-orange-500 to-red-500 text-white p-4">
+                <div className="font-bold text-lg">🚫 Objection #2: "Too expensive"</div>
+              </div>
+              <div className="p-6 space-y-3">
+                <div className="bg-green-50 p-3 rounded">
+                  <div className="text-sm font-semibold text-green-700">✅ Response (Egypt - EGP 250K/year):</div>
+                  <div className="text-sm text-gray-700">"I understand. Let's look at what you're LOSING: You miss 20 calls/day × EGP 200 avg = EGP 4,000/day lost. That's EGP 120,000/month walking away. My price is EGP 20,000/month. So you're spending EGP 20K to make back EGP 120K. That's not expensive—that's a 6X return."</div>
+                </div>
+                <div className="bg-blue-50 p-3 rounded">
+                  <div className="text-sm font-semibold text-blue-700">🔥 Alternative Angle:</div>
+                  <div className="text-sm text-gray-700">"Let me ask: How much do you pay a receptionist per month? [They say EGP 5,000-8,000] Okay, so you pay EGP 8,000/month for someone who works 8 hours, gets sick, takes vacation. I'm offering 24/7 coverage for EGP 20,000/month—less than 3 people. Still expensive?"</div>
+                </div>
               </div>
             </div>
-            <div className="bg-white border-2 border-purple-500 rounded-lg p-4">
-              <div className="font-bold text-purple-600 mb-2">KSA WHALES</div>
-              <div className="text-sm space-y-1">
-                <div>🏥 Saudi German Hospitals</div>
-                <div>🏪 Chalhoub Group (retail)</div>
-                <div>💰 Target: $100K-150K each</div>
+
+            <div className="bg-white border-2 border-gray-300 rounded-xl overflow-hidden">
+              <div className="bg-gradient-to-r from-blue-500 to-indigo-500 text-white p-4">
+                <div className="font-bold text-lg">🚫 Objection #3: "We already have staff to answer calls"</div>
+              </div>
+              <div className="p-6 space-y-3">
+                <div className="bg-green-50 p-3 rounded">
+                  <div className="text-sm font-semibold text-green-700">✅ Response:</div>
+                  <div className="text-sm text-gray-700">"That's great! This doesn't replace your staff—it HELPS them. When do they leave? 5 PM? So who answers calls at 7 PM when customers need you? And when they're helping someone in-person, who gets the phone? This catches the overflow. Your staff will actually love it because they won't be overwhelmed."</div>
+                </div>
+                <div className="bg-purple-50 p-3 rounded">
+                  <div className="text-sm font-semibold text-purple-700">💡 Add This:</div>
+                  <div className="text-sm text-gray-700">"Plus, your staff can focus on customers standing in front of them—better service, more sales. The AI handles the interruptions."</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border-2 border-gray-300 rounded-xl overflow-hidden">
+              <div className="bg-gradient-to-r from-green-500 to-emerald-500 text-white p-4">
+                <div className="font-bold text-lg">🚫 Objection #4: "I need to talk to my partner/boss"</div>
+              </div>
+              <div className="p-6 space-y-3">
+                <div className="bg-green-50 p-3 rounded">
+                  <div className="text-sm font-semibold text-green-700">✅ Response:</div>
+                  <div className="text-sm text-gray-700">"Perfect! Let's get them on a quick call right now. I have 10 minutes—can you call them?"</div>
+                </div>
+                <div className="bg-yellow-50 p-3 rounded">
+                  <div className="text-sm font-semibold text-yellow-700">⚠️ If They Can't Call Now:</div>
+                  <div className="text-sm text-gray-700">"No problem. When can we all meet? I'll block my calendar. Tomorrow at 2 PM? Let's schedule it right now while I'm here."</div>
+                  <div className="text-xs text-yellow-600 mt-1">Pro tip: Get a SPECIFIC time, or you'll never hear from them again</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border-2 border-gray-300 rounded-xl overflow-hidden">
+              <div className="bg-gradient-to-r from-yellow-500 to-orange-500 text-white p-4">
+                <div className="font-bold text-lg">🚫 Objection #5: "Send me more info / I'll check your website"</div>
+              </div>
+              <div className="p-6 space-y-3">
+                <div className="bg-red-50 p-3 rounded">
+                  <div className="text-sm font-semibold text-red-700">⚠️ WARNING: This is a polite rejection</div>
+                  <div className="text-sm text-gray-700">They're not actually going to read anything. You're being dismissed.</div>
+                </div>
+                <div className="bg-green-50 p-3 rounded">
+                  <div className="text-sm font-semibold text-green-700">✅ Response:</div>
+                  <div className="text-sm text-gray-700">"I can send you info, but honestly, you just TESTED it yourself. You know it works. What specific information do you need that the demo didn't show you?"</div>
+                </div>
+                <div className="bg-blue-50 p-3 rounded">
+                  <div className="text-sm font-semibold text-blue-700">🎯 Alternative (More Aggressive):</div>
+                  <div className="text-sm text-gray-700">"Here's the thing: I can send you a PDF, but we both know you won't read it. You're busy. Instead, let me ask: If I could start this TODAY and you see results in 3 days, would you keep it? [Wait for yes] Great, so let's just start it. If it doesn't work, I'll remove it. Fair?"</div>
+                </div>
               </div>
             </div>
           </div>
 
-          <div className="bg-white border border-gray-200 p-4 rounded-lg">
-            <div className="font-semibold mb-3">Whale Hunting Strategy:</div>
+          <div className="bg-gradient-to-r from-purple-600 to-pink-600 text-white p-6 rounded-xl">
+            <div className="font-bold text-2xl mb-3">🔑 The Universal Objection Killer</div>
+            <div className="text-lg opacity-90 mb-3">When you don't know what to say, use this:</div>
+            <div className="bg-white/20 p-4 rounded-lg text-xl font-semibold">
+              "What would have to be true for you to say YES right now?"
+            </div>
+            <div className="text-sm opacity-80 mt-3">Then SHUT UP and let them tell you exactly how to close them.</div>
+          </div>
+        </div>
+      )
+    },
+    {
+      title: "Pricing & Package Options",
+      subtitle: "What to Sell & When to Discount",
+      icon: <DollarSign className="w-20 h-20" />,
+      gradient: "from-green-500 to-emerald-600",
+      content: (
+        <div className="space-y-6">
+          <div className="bg-green-50 border-l-4 border-green-500 p-4">
+            <div className="font-bold text-green-800 text-lg">💰 Rule: Always sell the BUNDLE first. If they resist, break it down.</div>
+          </div>
+
+          <div className="grid grid-cols-4 gap-4">
+            <div className="bg-gradient-to-br from-green-500 to-emerald-600 text-white rounded-xl p-6">
+              <MapPin className="w-12 h-12 mb-3" />
+              <div className="text-2xl font-bold mb-2">EGYPT</div>
+              <div className="text-sm opacity-90 mb-4">EGP / USD Pricing</div>
+              <div className="space-y-2 text-sm">
+                <div className="bg-white/20 p-2 rounded">
+                  <div className="font-semibold">Bundle (Both)</div>
+                  <div className="text-lg font-bold">$5,000/year</div>
+                  <div className="text-xs">EGP 250,000</div>
+                </div>
+                <div className="bg-white/10 p-2 rounded">
+                  <div>WhatsApp Only: $3,000</div>
+                </div>
+                <div className="bg-white/10 p-2 rounded">
+                  <div>Voice Only: $3,500</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-orange-500 to-red-600 text-white rounded-xl p-6">
+              <Globe className="w-12 h-12 mb-3" />
+              <div className="text-2xl font-bold mb-2">TURKEY</div>
+              <div className="text-sm opacity-90 mb-4">USD Pricing</div>
+              <div className="space-y-2 text-sm">
+                <div className="bg-white/20 p-2 rounded">
+                  <div className="font-semibold">Bundle (Both)</div>
+                  <div className="text-lg font-bold">$4,000/year</div>
+                </div>
+                <div className="bg-white/10 p-2 rounded">
+                  <div>WhatsApp Only: $2,500</div>
+                </div>
+                <div className="bg-white/10 p-2 rounded">
+                  <div>Voice Only: $2,800</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-purple-500 to-pink-600 text-white rounded-xl p-6">
+              <Globe className="w-12 h-12 mb-3" />
+              <div className="text-2xl font-bold mb-2">SYRIA</div>
+              <div className="text-sm opacity-90 mb-4">USD Pricing</div>
+              <div className="space-y-2 text-sm">
+                <div className="bg-white/20 p-2 rounded">
+                  <div className="font-semibold">Bundle (Both)</div>
+                  <div className="text-lg font-bold">$3,000/year</div>
+                </div>
+                <div className="bg-white/10 p-2 rounded">
+                  <div>WhatsApp Only: $2,000</div>
+                </div>
+                <div className="bg-white/10 p-2 rounded">
+                  <div>Voice Only: $2,200</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-indigo-500 to-purple-600 text-white rounded-xl p-6">
+              <Globe className="w-12 h-12 mb-3" />
+              <div className="text-2xl font-bold mb-2">VIENNA/EU</div>
+              <div className="text-sm opacity-90 mb-4">EUR Pricing</div>
+              <div className="space-y-2 text-sm">
+                <div className="bg-white/20 p-2 rounded">
+                  <div className="font-semibold">Bundle (Both)</div>
+                  <div className="text-lg font-bold">€5,000/year</div>
+                  <div className="text-xs">~$5,500</div>
+                </div>
+                <div className="bg-white/10 p-2 rounded">
+                  <div>WhatsApp: €3,000</div>
+                </div>
+                <div className="bg-white/10 p-2 rounded">
+                  <div>Voice: €3,500</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white p-6 rounded-xl">
+            <div className="text-2xl font-bold mb-4">🇸🇦 KSA/GULF PREMIUM PRICING (Week 5-8)</div>
+            <div className="grid grid-cols-3 gap-4">
+              <div className="bg-white/20 p-4 rounded-lg">
+                <div className="text-sm opacity-90 mb-1">Professional</div>
+                <div className="text-3xl font-bold">$20K</div>
+                <div className="text-xs opacity-75 mt-1">Small clinics, restaurants</div>
+              </div>
+              <div className="bg-white/20 p-4 rounded-lg">
+                <div className="text-sm opacity-90 mb-1">Business</div>
+                <div className="text-3xl font-bold">$25K</div>
+                <div className="text-xs opacity-75 mt-1">Multi-location, dealerships</div>
+              </div>
+              <div className="bg-white/20 p-4 rounded-lg">
+                <div className="text-sm opacity-90 mb-1">Enterprise</div>
+                <div className="text-3xl font-bold">$50K+</div>
+                <div className="text-xs opacity-75 mt-1">Hospital chains, luxury brands</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-gray-900 text-white p-6 rounded-xl">
+            <div className="font-bold text-xl mb-4">📋 The Pricing Psychology Playbook:</div>
+            <div className="space-y-4">
+              <div className="flex gap-4">
+                <div className="bg-green-500 rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0 font-bold">1</div>
+                <div>
+                  <div className="font-semibold mb-1">Always Start with Bundle Price</div>
+                  <div className="text-sm opacity-90">"The complete package is $5,000 for the year—includes WhatsApp Bot AND Voice AI."</div>
+                </div>
+              </div>
+              <div className="flex gap-4">
+                <div className="bg-blue-500 rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0 font-bold">2</div>
+                <div>
+                  <div className="font-semibold mb-1">If They Say "Just WhatsApp" or "Just Voice"</div>
+                  <div className="text-sm opacity-90">"Sure, WhatsApp alone is $3,000. But for just $2,000 more you get BOTH. Most clients take the bundle because it's better value. Which makes more sense for you?"</div>
+                </div>
+              </div>
+              <div className="flex gap-4">
+                <div className="bg-purple-500 rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0 font-bold">3</div>
+                <div>
+                  <div className="font-semibold mb-1">Payment Plans (If They're Struggling)</div>
+                  <div className="text-sm opacity-90">"I can do 50% now ($2,500), 50% in 30 days when you see results. But this offer expires today."</div>
+                </div>
+              </div>
+              <div className="flex gap-4">
+                <div className="bg-red-500 rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0 font-bold">4</div>
+                <div>
+                  <div className="font-semibold mb-1">When to Discount (RARELY)</div>
+                  <div className="text-sm opacity-90">Only if: (1) They're signing TODAY, (2) They're referring 2+ businesses, OR (3) It's end of month and you need to hit target. Max discount: 15%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-yellow-50 border-l-4 border-yellow-500 p-4">
+            <div className="font-bold text-yellow-800 mb-2">⚠️ NEVER Say This:</div>
+            <div className="text-sm text-yellow-900 space-y-1">
+              <div>❌ "I can give you a discount" (Makes you look desperate)</div>
+              <div>❌ "Let me check with my boss on pricing" (You look powerless)</div>
+              <div>❌ "This is negotiable" (They'll lowball you)</div>
+            </div>
+            <div className="font-bold text-yellow-800 mt-3 mb-2">✅ Instead Say:</div>
+            <div className="text-sm text-yellow-900 space-y-1">
+              <div>✅ "This is the rate for this month. Next month it goes up 20%."</div>
+              <div>✅ "I'm authorized to offer the bundle at $5K if you sign today."</div>
+              <div>✅ "The price is fixed, but I can offer a payment plan if that helps."</div>
+            </div>
+          </div>
+        </div>
+      )
+    },
+    {
+      title: "Your Daily Battle Plan",
+      subtitle: "What to Do Every Single Day (Hour-by-Hour)",
+      icon: <Calendar className="w-20 h-20" />,
+      gradient: "from-blue-500 to-indigo-600",
+      content: (
+        <div className="space-y-6">
+          <div className="bg-blue-50 border-l-4 border-blue-500 p-4">
+            <div className="font-bold text-blue-800 text-lg">⏰ Consistency beats intensity. Do this EVERY day for 60 days.</div>
+          </div>
+
+          <div className="grid grid-cols-2 gap-6">
+            <div className="space-y-4">
+              <div className="bg-gradient-to-r from-green-500 to-emerald-600 text-white p-4 rounded-lg">
+                <div className="font-bold text-xl mb-2">📍 IN-PERSON DAILY SCHEDULE</div>
+                <div className="text-sm opacity-90">(Egypt Team)</div>
+              </div>
+
+              <div className="bg-white border-2 border-green-500 rounded-lg p-4">
+                <div className="space-y-3 text-sm">
+                  <div className="flex items-start gap-3">
+                    <div className="bg-green-500 text-white rounded px-2 py-1 text-xs font-bold min-w-20">8:00 AM</div>
+                    <div>
+                      <div className="font-semibold">Team Standup (15 min)</div>
+                      <div className="text-gray-600">Share yesterday's wins, today's targets, get help on stuck deals</div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="bg-green-500 text-white rounded px-2 py-1 text-xs font-bold min-w-20">9:00 AM</div>
+                    <div>
+                      <div className="font-semibold">Prep & Travel</div>
+                      <div className="text-gray-600">Review today's 10 prospects, plan route, charge demo phone</div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="bg-green-500 text-white rounded px-2 py-1 text-xs font-bold min-w-20">10:00 AM</div>
+                    <div>
+                      <div className="font-semibold">Visit 1-5 (First Wave)</div>
+                      <div className="text-gray-600">Hit 5 businesses, do live demos, aim for 1-2 interested</div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="bg-green-500 text-white rounded px-2 py-1 text-xs font-bold min-w-20">1:00 PM</div>
+                    <div>
+                      <div className="font-semibold">Lunch & Follow-ups</div>
+                      <div className="text-gray-600">Eat + call yesterday's prospects, handle objections, close deals</div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="bg-green-500 text-white rounded px-2 py-1 text-xs font-bold min-w-20">2:30 PM</div>
+                    <div>
+                      <div className="font-semibold">Visit 6-10 (Second Wave)</div>
+                      <div className="text-gray-600">Hit 5 more businesses, repeat the pitch, book follow-ups</div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="bg-green-500 text-white rounded px-2 py-1 text-xs font-bold min-w-20">5:30 PM</div>
+                    <div>
+                      <div className="font-semibold">Closing Hour</div>
+                      <div className="text-gray-600">Call today's interested prospects, get contracts signed, collect payments</div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="bg-green-500 text-white rounded px-2 py-1 text-xs font-bold min-w-20">7:00 PM</div>
+                    <div>
+                      <div className="font-semibold">End-of-Day Report</div>
+                      <div className="text-gray-600">Log results, prep tomorrow's list, celebrate wins</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="space-y-4">
+              <div className="bg-gradient-to-r from-purple-500 to-pink-600 text-white p-4 rounded-lg">
+                <div className="font-bold text-xl mb-2">🌐 REMOTE DAILY SCHEDULE</div>
+                <div className="text-sm opacity-90">(Turkey/Syria/Vienna Team)</div>
+              </div>
+
+              <div className="bg-white border-2 border-purple-500 rounded-lg p-4">
+                <div className="space-y-3 text-sm">
+                  <div className="flex items-start gap-3">
+                    <div className="bg-purple-500 text-white rounded px-2 py-1 text-xs font-bold min-w-20">9:00 AM</div>
+                    <div>
+                      <div className="font-semibold">LinkedIn Outreach Blitz</div>
+                      <div className="text-gray-600">Send 25 connection requests with personalized message (template provided)</div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="bg-purple-500 text-white rounded px-2 py-1 text-xs font-bold min-w-20">10:30 AM</div>
+                    <div>
+                      <div className="font-semibold">Cold Calling Session 1</div>
+                      <div className="text-gray-600">Call 15 prospects from yesterday's LinkedIn, book Zoom demos</div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="bg-purple-500 text-white rounded px-2 py-1 text-xs font-bold min-w-20">12:00 PM</div>
+                    <div>
+                      <div className="font-semibold">Zoom Demo 1 & 2</div>
+                      <div className="text-gray-600">Run 2 demos (30 min each), show demo phone over video call</div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="bg-purple-500 text-white rounded px-2 py-1 text-xs font-bold min-w-20">1:30 PM</div>
+                    <div>
+                      <div className="font-semibold">Lunch & Admin</div>
+                      <div className="text-gray-600">Break + send proposals to today's demo prospects</div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="bg-purple-500 text-white rounded px-2 py-1 text-xs font-bold min-w-20">2:30 PM</div>
+                    <div>
+                      <div className="font-semibold">Cold Calling Session 2</div>
+                      <div className="text-gray-600">Call 15 more prospects, book demos for tomorrow</div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="bg-purple-500 text-white rounded px-2 py-1 text-xs font-bold min-w-20">4:00 PM</div>
+                    <div>
+                      <div className="font-semibold">Zoom Demo 3 & 4</div>
+                      <div className="text-gray-600">2 more demos, close same-day if possible</div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="bg-purple-500 text-white rounded px-2 py-1 text-xs font-bold min-w-20">6:00 PM</div>
+                    <div>
+                      <div className="font-semibold">Follow-up & Close</div>
+                      <div className="text-gray-600">Call yesterday's demos, handle objections, get signed contracts</div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="bg-purple-500 text-white rounded px-2 py-1 text-xs font-bold min-w-20">7:30 PM</div>
+                    <div>
+                      <div className="font-semibold">Report & Prep</div>
+                      <div className="text-gray-600">Daily report to team, prep tomorrow's calling list</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-r from-orange-500 to-red-600 text-white p-6 rounded-xl">
+            <div className="font-bold text-2xl mb-4">📊 Daily Success Metrics (Track These)</div>
+            <div className="grid grid-cols-4 gap-4">
+              <div className="bg-white/20 p-4 rounded-lg text-center">
+                <div className="text-3xl font-bold">10</div>
+                <div className="text-sm opacity-90 mt-1">Contacts/Day</div>
+              </div>
+              <div className="bg-white/20 p-4 rounded-lg text-center">
+                <div className="text-3xl font-bold">5</div>
+                <div className="text-sm opacity-90 mt-1">Demos/Day</div>
+              </div>
+              <div className="bg-white/20 p-4 rounded-lg text-center">
+                <div className="text-3xl font-bold">3</div>
+                <div className="text-sm opacity-90 mt-1">Follow-ups/Day</div>
+              </div>
+              <div className="bg-white/20 p-4 rounded-lg text-center">
+                <div className="text-3xl font-bold">0.3</div>
+                <div className="text-sm opacity-90 mt-1">Closes/Day (3 per 10 days)</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-gray-900 text-white p-6 rounded-xl">
+            <div className="font-bold text-xl mb-4">🔥 The 10-Day Cycle (Your Rhythm)</div>
+            <div className="grid grid-cols-3 gap-4 text-sm">
+              <div className="bg-blue-900 p-4 rounded-lg">
+                <div className="font-bold mb-2">Day 1-3: HUNT</div>
+                <div className="opacity-90">Maximum outreach, book demos, build pipeline</div>
+                <div className="text-xs mt-2 opacity-75">Target: 30 demos booked</div>
+              </div>
+              <div className="bg-green-900 p-4 rounded-lg">
+                <div className="font-bold mb-2">Day 4-7: CLOSE</div>
+                <div className="opacity-90">Follow up, handle objections, sign contracts</div>
+                <div className="text-xs mt-2 opacity-75">Target: 3 deals closed</div>
+              </div>
+              <div className="bg-purple-900 p-4 rounded-lg">
+                <div className="font-bold mb-2">Day 8-10: DELIVER</div>
+                <div className="opacity-90">Set up clients, prep next cycle, breathe</div>
+                <div className="text-xs mt-2 opacity-75">Target: 3 happy clients ready</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )
+    },
+    {
+      title: "Remote Sales Mastery (LinkedIn & Zoom)",
+      subtitle: "How to Close Without Being There",
+      icon: <Globe className="w-20 h-20" />,
+      gradient: "from-purple-500 to-pink-600",
+      content: (
+        <div className="space-y-6">
+          <div className="bg-purple-50 border-l-4 border-purple-500 p-4">
+            <div className="font-bold text-purple-800 text-lg">🌍 Remote selling is HARDER but MORE scalable. Master this = unlimited income.</div>
+          </div>
+
+          <div className="bg-white border-2 border-indigo-500 rounded-xl p-6">
+            <div className="bg-indigo-500 text-white px-4 py-2 rounded-t-lg -mt-6 -mx-6 mb-4">
+              <div className="font-bold text-lg">📱 LinkedIn Outreach Script (Copy-Paste)</div>
+            </div>
+            <div className="space-y-4">
+              <div className="bg-gray-50 p-4 rounded-lg">
+                <div className="text-xs font-semibold text-gray-500 mb-2">CONNECTION REQUEST MESSAGE:</div>
+                <div className="text-sm font-medium italic">"Hi [Name], I help [pharmacies/clinics/restaurants] in [Turkey/Syria/Austria] capture 100% of customer calls with AI—even when closed or busy. We're serving 30+ businesses across MENA. Would love to connect!"</div>
+              </div>
+              <div className="bg-blue-50 p-4 rounded-lg">
+                <div className="text-xs font-semibold text-gray-500 mb-2">FOLLOW-UP MESSAGE (24 hours after they accept):</div>
+                <div className="text-sm font-medium italic">"Thanks for connecting! Quick question: How many customer calls do you think you miss daily? Most [pharmacies/clinics] lose 15-20 calls = [currency] [amount] in lost revenue. We built an AI that catches all of them. Worth a 15-min demo?"</div>
+              </div>
+              <div className="bg-green-50 p-4 rounded-lg">
+                <div className="text-xs font-semibold text-gray-500 mb-2">WHEN THEY SAY YES:</div>
+                <div className="text-sm font-medium italic">"Perfect! I can do tomorrow at 2 PM or Thursday at 11 AM. Which works? I'll send you a Zoom link. PS: I'll show you a LIVE AI you can test yourself—not a boring PowerPoint 😊"</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-white border-2 border-purple-500 rounded-xl p-6">
+            <div className="bg-purple-500 text-white px-4 py-2 rounded-t-lg -mt-6 -mx-6 mb-4">
+              <div className="font-bold text-lg">💻 Zoom Demo Script (Show Demo Phone Over Video)</div>
+            </div>
+            <div className="space-y-3 text-sm">
+              <div className="flex gap-3">
+                <div className="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 font-bold">1</div>
+                <div>
+                  <div className="font-semibold mb-1">Start with Pain (30 seconds)</div>
+                  <div className="text-gray-600">"Before I show you anything, tell me: What happens when you get a call while helping a customer in-person? Do you answer or let it ring?"</div>
+                </div>
+              </div>
+              <div className="flex gap-3">
+                <div className="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 font-bold">2</div>
+                <div>
+                  <div className="font-semibold mb-1">Show Demo Phone (2 minutes)</div>
+                  <div className="text-gray-600">"Let me show you the solution. I'm going to put you on hold for 10 seconds, call our demo AI, put it on speaker so you can hear it. Ready?" [Call demo number, put on speaker, let them hear AI answer in real-time]</div>
+                </div>
+              </div>
+              <div className="flex gap-3">
+                <div className="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 font-bold">3</div>
+                <div>
+                  <div className="font-semibold mb-1">Have THEM Test It (3 minutes)</div>
+                  <div className="text-gray-600">"Now YOU call it. Here's the number: [share in chat]. Call it on your phone, ask it questions in [Turkish/Arabic/German]. I'll wait."</div>
+                </div>
+              </div>
+              <div className="flex gap-3">
+                <div className="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 font-bold">4</div>
+                <div>
+                  <div className="font-semibold mb-1">Price & Close (2 minutes)</div>
+                  <div className="text-gray-600">"Pretty cool, right? That's what YOUR customers experience. Cost is [$4,000/year for Turkey]. I can have it running for you by tomorrow. Want to move forward?"</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-r from-yellow-500 to-orange-600 text-white p-6 rounded-xl">
+            <div className="font-bold text-xl mb-3">🎯 Remote Close Rate Boosters</div>
+            <div className="grid grid-cols-2 gap-4 text-sm">
+              <div className="bg-white/20 p-3 rounded-lg">
+                <div className="font-semibold mb-1">✅ Always Use Video</div>
+                <div className="opacity-90">Face-to-face builds trust. Audio-only = lower close rate.</div>
+              </div>
+              <div className="bg-white/20 p-3 rounded-lg">
+                <div className="font-semibold mb-1">✅ Share Your Screen</div>
+                <div className="opacity-90">Show case studies, client testimonials, live dashboards.</div>
+              </div>
+              <div className="bg-white/20 p-3 rounded-lg">
+                <div className="font-semibold mb-1">✅ Record Every Call</div>
+                <div className="opacity-90">"I'm recording this so I can send you the demo video after." (Also helps you improve)</div>
+              </div>
+              <div className="bg-white/20 p-3 rounded-lg">
+                <div className="font-semibold mb-1">✅ Send Contract Immediately</div>
+                <div className="opacity-90">Right after demo: "I'm emailing the contract now. Can you sign while we're on the call?"</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-gray-900 text-white p-6 rounded-xl">
+            <div className="font-bold text-xl mb-4">📞 Cold Calling Script (For Remote Team)</div>
+            <div className="space-y-3 text-sm">
+              <div className="bg-blue-900 p-3 rounded-lg">
+                <div className="font-semibold mb-1">Opening (5 seconds - before they hang up)</div>
+                <div className="opacity-90">"Hi [Name], this is [Your Name] - I help [pharmacies] capture missed calls with AI. Do you have 30 seconds?"</div>
+              </div>
+              <div className="bg-green-900 p-3 rounded-lg">
+                <div className="font-semibold mb-1">If YES (20 seconds)</div>
+                <div className="opacity-90">"Great! You probably miss 10-20 calls daily - that's [amount] lost. We built an AI that answers every call in [language], 24/7. Can I show you a quick demo on Zoom? Takes 10 minutes."</div>
+              </div>
+              <div className="bg-purple-900 p-3 rounded-lg">
+                <div className="font-semibold mb-1">If NO / "Send me info"</div>
+                <div className="opacity-90">"I could email you, but honestly, seeing it is better. How about this: I call you back in 2 hours when you're free, show you a 5-minute demo, and if you hate it, I'll never bother you again. Fair? What time works - 2 PM or 4 PM?"</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-red-50 border-l-4 border-red-500 p-4">
+            <div className="font-bold text-red-800 mb-2">⚠️ Remote Sales Mistakes to AVOID:</div>
+            <div className="text-sm text-red-900 space-y-1">
+              <div>❌ Sending info before demo (they won't read it, you lost them)</div>
+              <div>❌ Doing demos without booking a specific time (no-shows = 80%)</div>
+              <div>❌ Not asking for the sale at the end (assuming they'll reach out)</div>
+              <div>❌ Following up more than 3 times (if they ghost after 3, move on)</div>
+            </div>
+          </div>
+        </div>
+      )
+    },
+    {
+      title: "KSA Mission: Week 5-8 Premium Play",
+      subtitle: "How Leader + 1 Person Print $200K in KSA",
+      icon: <Rocket className="w-20 h-20" />,
+      gradient: "from-yellow-500 to-orange-600",
+      content: (
+        <div className="space-y-6">
+          <div className="bg-gradient-to-r from-yellow-500 to-orange-600 text-white p-8 rounded-xl text-center">
+            <div className="text-5xl font-black mb-3">$205,000</div>
+            <div className="text-2xl mb-2">from just 9 clients in 4 weeks</div>
+            <div className="text-lg opacity-90">This is the BIG money. Premium market. Premium pricing. Let's execute.</div>
+          </div>
+
+          <div className="bg-orange-50 border-l-4 border-orange-500 p-4">
+            <div className="font-bold text-orange-800 text-lg">🎯 Why KSA After Week 4: You need PROOF before selling premium</div>
+            <div className="text-sm text-orange-900 mt-2">Week 1-4 Egypt revenue = social proof. "We serve 50+ businesses" = credibility. Now you can charge $25K.</div>
+          </div>
+
+          <div className="bg-white border-2 border-blue-500 rounded-xl p-6">
+            <div className="font-bold text-xl text-blue-600 mb-4">📅 The 4-Week KSA Timeline</div>
+            <div className="grid grid-cols-2 gap-4">
+              <div className="bg-blue-50 p-4 rounded-lg">
+                <div className="font-bold text-blue-700 mb-2">Week 3-4 (Remote Prep)</div>
+                <div className="text-sm space-y-2">
+                  <div>• LinkedIn: Connect with 100 Riyadh/Jeddah business owners</div>
+                  <div>• Research: Identify 20 premium targets (clinics, dealerships, luxury retail)</div>
+                  <div>• Outreach: Book 10 Zoom demos for Week 5</div>
+                  <div>• Book Flights: Leader + Egypt Person 2 → Riyadh (Week 5)</div>
+                </div>
+              </div>
+              <div className="bg-green-50 p-4 rounded-lg">
+                <div className="font-bold text-green-700 mb-2">Week 5-6 (Boots on Ground)</div>
+                <div className="text-sm space-y-2">
+                  <div>• Day 1: Land in Riyadh, check into hotel</div>
+                  <div>• Day 2-5: 2 in-person demos/day (10 total)</div>
+                  <div>• Day 6-10: Follow up, close 5 deals @ $20-25K each = $115K</div>
+                  <div>• Close rate: 50% (higher because in-person + premium positioning)</div>
+                </div>
+              </div>
+              <div className="bg-purple-50 p-4 rounded-lg">
+                <div className="font-bold text-purple-700 mb-2">Week 7-8 (Still in KSA)</div>
+                <div className="text-sm space-y-2">
+                  <div>• Expand to Jeddah (or stay in Riyadh)</div>
+                  <div>• Run 8 more demos (from Week 5 pipeline)</div>
+                  <div>• Close 4 more deals @ $20-25K = $90K</div>
+                  <div>• Total KSA Revenue: $205K from 9 clients</div>
+                </div>
+              </div>
+              <div className="bg-yellow-50 p-4 rounded-lg">
+                <div className="font-bold text-yellow-700 mb-2">Investment & ROI</div>
+                <div className="text-sm space-y-2">
+                  <div>• Flights (2 people): $1,500</div>
+                  <div>• Hotel (14 days): $2,000</div>
+                  <div>• Food/Transport: $1,000</div>
+                  <div>• Total Investment: $4,500</div>
+                  <div className="font-bold text-green-600 pt-2 border-t">ROI: $205K revenue = 4,455% return!</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-gray-900 text-white p-6 rounded-xl">
+            <div className="font-bold text-xl mb-4">🇸🇦 KSA-Specific Pitch Adjustments</div>
+            <div className="space-y-4">
+              <div className="bg-blue-900 p-4 rounded-lg">
+                <div className="font-semibold mb-2">1. Lead with Regional Success</div>
+                <div className="text-sm opacity-90">"We're serving 50+ businesses across Egypt, Turkey, and UAE—handling 5,000+ customer interactions daily. We're now expanding to KSA with 10 premium clients this quarter."</div>
+              </div>
+              <div className="bg-green-900 p-4 rounded-lg">
+                <div className="font-semibold mb-2">2. Premium Positioning</div>
+                <div className="text-sm opacity-90">"We don't work with everyone. We select 10 businesses per city—the ones who value premium service and can't afford to miss VIP clients. Based on what I see, you're exactly who we want to work with."</div>
+              </div>
+              <div className="bg-purple-900 p-4 rounded-lg">
+                <div className="font-semibold mb-2">3. Price Anchoring</div>
+                <div className="text-sm opacity-90">"In the US, this technology costs $50K-100K/year. For KSA, we're offering SAR 93,750 ($25K) because we're building our presence here. This rate is locked for founding clients only."</div>
+              </div>
+              <div className="bg-orange-900 p-4 rounded-lg">
+                <div className="font-semibold mb-2">4. VIP Client Focus</div>
+                <div className="text-sm opacity-90">"One missed call from a VIP client = SAR 50,000-200,000 lost. Our AI ensures you NEVER miss them—even at 11 PM. That one save pays for the entire year."</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-white border-2 border-green-500 rounded-xl p-6">
+            <div className="font-bold text-xl text-green-600 mb-4">🎯 Who to Target in KSA (Premium Only)</div>
             <div className="grid grid-cols-2 gap-4 text-sm">
               <div>
-                <div className="font-semibold text-gray-700 mb-1">Week 5-6: Research & Outreach</div>
-                <div className="text-gray-600">Identify decision makers, LinkedIn connections, warm intros</div>
+                <div className="font-semibold mb-2 text-green-700">✅ PERFECT TARGETS:</div>
+                <div className="space-y-1 text-gray-700">
+                  <div>• Premium medical clinics (Riyadh, Jeddah elite areas)</div>
+                  <div>• Luxury car dealerships (Mercedes, Porsche, etc.)</div>
+                  <div>• High-end jewelry stores (Gold Souk, luxury malls)</div>
+                  <div>• Exclusive real estate (luxury villas/compounds)</div>
+                  <div>• 5-star hotel concierge services</div>
+                  <div>• Premium restaurant groups</div>
+                </div>
               </div>
               <div>
-                <div className="font-semibold text-gray-700 mb-1">Week 7: Demo & Proposal</div>
-                <div className="text-gray-600">C-level demos, custom proposals, ROI calculations</div>
+                <div className="font-semibold mb-2 text-red-700">❌ SKIP THESE:</div>
+                <div className="space-y-1 text-gray-700">
+                  <div>• Small pharmacies (they won't pay $25K)</div>
+                  <div>• Budget clinics (price-sensitive)</div>
+                  <div>• Small retail shops (can't justify ROI)</div>
+                  <div>• Anything that's not "premium" or "luxury"</div>
+                </div>
+                <div className="mt-3 p-2 bg-yellow-50 rounded text-yellow-800 text-xs">
+                  <strong>Remember:</strong> In KSA, you need 1/5th the clients at 5X the price. Quality over quantity.
+                </div>
               </div>
-              <div>
-                <div className="font-semibold text-gray-700 mb-1">Week 8: Negotiation & Close</div>
-                <div className="text-gray-600">Handle procurement, legal, close 2-3 deals</div>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-r from-green-500 to-emerald-600 text-white p-6 rounded-xl">
+            <div className="font-bold text-2xl mb-3">💰 Commission Opportunity (KSA Team)</div>
+            <div className="grid grid-cols-2 gap-4">
+              <div className="bg-white/20 p-4 rounded-lg text-center">
+                <div className="text-sm opacity-90 mb-1">Leader (9 clients)</div>
+                <div className="text-4xl font-bold">$20,500</div>
+                <div className="text-xs opacity-75 mt-1">10% of $205K</div>
               </div>
-              <div>
-                <div className="font-semibold text-gray-700 mb-1">Success Metric:</div>
-                <div className="text-gray-600">Just 2 whale deals = $150K-200K extra</div>
+              <div className="bg-white/20 p-4 rounded-lg text-center">
+                <div className="text-sm opacity-90 mb-1">Egypt Person (support)</div>
+                <div className="text-4xl font-bold">$10,000</div>
+                <div className="text-xs opacity-75 mt-1">Bonus for KSA help</div>
+              </div>
+            </div>
+            <div className="text-center mt-4 text-lg opacity-90">4 weeks in KSA = Life-changing money 🚀</div>
+          </div>
+        </div>
+      )
+    },
+    {
+      title: "Tools & Resources You'll Use",
+      subtitle: "Everything You Need to Succeed",
+      icon: <Star className="w-20 h-20" />,
+      gradient: "from-indigo-500 to-purple-600",
+      content: (
+        <div className="space-y-6">
+          <div className="bg-indigo-50 border-l-4 border-indigo-500 p-4">
+            <div className="font-bold text-indigo-800 text-lg">🛠️ You're not alone. You have all these tools + the team.</div>
+          </div>
+
+          <div className="grid grid-cols-2 gap-6">
+            <div className="bg-white border-2 border-blue-500 rounded-xl p-6">
+              <div className="flex items-center gap-3 mb-4">
+                <Phone className="w-12 h-12 text-blue-500" />
+                <div className="font-bold text-xl text-blue-600">Your Demo Phone Number</div>
+              </div>
+              <div className="space-y-2 text-sm text-gray-700">
+                <div><strong>What it is:</strong> A live AI receptionist you can call anytime</div>
+                <div><strong>Your number:</strong> [Will be provided on Day 1]</div>
+                <div><strong>How to use:</strong> "Call this number right now and test it yourself"</div>
+                <div className="pt-2 border-t">
+                  <strong>Pro tip:</strong> Add it to your phone contacts as "NeuraTalk Demo" so you can quickly show prospects
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border-2 border-green-500 rounded-xl p-6">
+              <div className="flex items-center gap-3 mb-4">
+                <Eye className="w-12 h-12 text-green-500" />
+                <div className="font-bold text-xl text-green-600">Case Study Videos</div>
+              </div>
+              <div className="space-y-2 text-sm text-gray-700">
+                <div><strong>What it is:</strong> 30-60 sec videos of happy Egypt clients</div>
+                <div><strong>Access:</strong> Shared Google Drive folder</div>
+                <div><strong>How to use:</strong> "Look, this pharmacy was like you—skeptical. Now they're capturing 100 calls/day. Watch this 30-second video."</div>
+                <div className="pt-2 border-t">
+                  <strong>Update weekly:</strong> As we close Egypt clients, we film testimonials and add them
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border-2 border-purple-500 rounded-xl p-6">
+              <div className="flex items-center gap-3 mb-4">
+                <MessageSquare className="w-12 h-12 text-purple-500" />
+                <div className="font-bold text-xl text-purple-600">WhatsApp Templates</div>
+              </div>
+              <div className="space-y-2 text-sm text-gray-700">
+                <div><strong>What it is:</strong> Copy-paste messages for follow-ups</div>
+                <div><strong>Templates include:</strong></div>
+                <div className="ml-3">
+                  <div>• Post-demo follow-up</div>
+                  <div>• "Let me think about it" response</div>
+                  <div>• Payment reminder</div>
+                  <div>• Referral request</div>
+                </div>
+                <div className="pt-2 border-t">
+                  <strong>Available in:</strong> Arabic, English, Turkish, German
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border-2 border-orange-500 rounded-xl p-6">
+              <div className="flex items-center gap-3 mb-4">
+                <Target className="w-12 h-12 text-orange-500" />
+                <div className="font-bold text-xl text-orange-600">Prospect Lists</div>
+              </div>
+              <div className="space-y-2 text-sm text-gray-700">
+                <div><strong>What it is:</strong> Pre-built lists of 1,000+ prospects per market</div>
+                <div><strong>Includes:</strong> Business name, phone, address, LinkedIn</div>
+                <div><strong>Markets covered:</strong> Egypt, Turkey, Syria, KSA, Austria</div>
+                <div className="pt-2 border-t">
+                  <strong>How to use:</strong> Download your market's list, start calling top to bottom
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border-2 border-red-500 rounded-xl p-6">
+              <div className="flex items-center gap-3 mb-4">
+                <Calendar className="w-12 h-12 text-red-500" />
+                <div className="font-bold text-xl text-red-600">Shared Calendar</div>
+              </div>
+              <div className="space-y-2 text-sm text-gray-700">
+                <div><strong>What it is:</strong> Team Google Calendar with all demos/meetings</div>
+                <div><strong>Use for:</strong> Booking Zoom demos, blocking your schedule</div>
+                <div><strong>Rule:</strong> All demos must be in calendar = accountability</div>
+                <div className="pt-2 border-t">
+                  <strong>Access:</strong> Link sent Day 1, sync to your phone
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border-2 border-yellow-500 rounded-xl p-6">
+              <div className="flex items-center gap-3 mb-4">
+                <Users className="w-12 h-12 text-yellow-500" />
+                <div className="font-bold text-xl text-yellow-600">Team WhatsApp Group</div>
+              </div>
+              <div className="space-y-2 text-sm text-gray-700">
+                <div><strong>What it is:</strong> 24/7 support from the entire team</div>
+                <div><strong>Use for:</strong> Quick questions, celebrating wins, getting unstuck</div>
+                <div><strong>Response time:</strong> Under 30 minutes during work hours</div>
+                <div className="pt-2 border-t">
+                  <strong>Golden rule:</strong> Share every win, no matter how small 🎉
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white p-6 rounded-xl">
+            <div className="font-bold text-2xl mb-4">📊 Your Daily Tracking Sheet (Critical!)</div>
+            <div className="bg-white/20 p-4 rounded-lg">
+              <div className="grid grid-cols-5 gap-3 text-sm text-center">
+                <div>
+                  <div className="font-semibold mb-1">Contacts</div>
+                  <div className="text-xs opacity-90">People reached</div>
+                </div>
+                <div>
+                  <div className="font-semibold mb-1">Demos</div>
+                  <div className="text-xs opacity-90">Live demos shown</div>
+                </div>
+                <div>
+                  <div className="font-semibold mb-1">Follow-ups</div>
+                  <div className="text-xs opacity-90">Calls made</div>
+                </div>
+                <div>
+                  <div className="font-semibold mb-1">Closes</div>
+                  <div className="text-xs opacity-90">Deals signed</div>
+                </div>
+                <div>
+                  <div className="font-semibold mb-1">Revenue</div>
+                  <div className="text-xs opacity-90">$ closed today</div>
+                </div>
+              </div>
+              <div className="mt-4 text-center text-sm opacity-90">
+                Fill this out EVERY day at 7 PM. Leader reviews it. This keeps you accountable.
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-gray-900 text-white p-6 rounded-xl">
+            <div className="font-bold text-xl mb-4">🎓 Weekly Training (Wednesdays 6 PM)</div>
+            <div className="grid grid-cols-3 gap-4 text-sm">
+              <div className="bg-green-900 p-4 rounded-lg">
+                <div className="font-bold mb-2">Week 1: Pitch Mastery</div>
+                <div className="opacity-90">Role-playing, objection handling, demo phone technique</div>
+              </div>
+              <div className="bg-blue-900 p-4 rounded-lg">
+                <div className="font-bold mb-2">Week 3: Remote Selling</div>
+                <div className="opacity-90">LinkedIn hacks, Zoom demo secrets, cold calling</div>
+              </div>
+              <div className="bg-purple-900 p-4 rounded-lg">
+                <div className="font-bold mb-2">Week 5: Premium Closing</div>
+                <div className="opacity-90">How to sell $25K packages, KSA preparation</div>
               </div>
             </div>
           </div>
@@ -287,14 +1398,124 @@ export default function NeuraTalkBattlePlan() {
       )
     },
     {
-      title: "Revenue Breakdown",
-      subtitle: "How We Hit $590K in 60 Days",
-      icon: <DollarSign className="w-16 h-16" />,
+      title: "The Winning Mindset",
+      subtitle: "Mental Game = Sales Game",
+      icon: <Brain className="w-20 h-20" />,
+      gradient: "from-pink-500 to-red-600",
       content: (
         <div className="space-y-6">
-          <div className="overflow-hidden rounded-lg border border-gray-200">
+          <div className="bg-gradient-to-r from-pink-500 to-red-600 text-white p-8 rounded-xl text-center">
+            <div className="text-4xl font-black mb-3">90% of Sales is Mental</div>
+            <div className="text-xl opacity-90">Master your mind. Master your money.</div>
+          </div>
+
+          <div className="bg-white border-4 border-red-500 rounded-xl p-6">
+            <div className="font-bold text-2xl text-red-600 mb-4">🧠 The Mindset Shifts You MUST Make</div>
+            <div className="space-y-4">
+              <div className="bg-red-50 p-4 rounded-lg">
+                <div className="font-bold text-red-700 mb-2">1. Rejection is Data, Not Personal</div>
+                <div className="text-sm text-gray-700">Every "no" teaches you something. 10 no's = you're getting closer to yes. The best salespeople hear "no" 100 times/week and don't care.</div>
+              </div>
+              <div className="bg-orange-50 p-4 rounded-lg">
+                <div className="font-bold text-orange-700 mb-2">2. You're Not Selling, You're Saving Them Money</div>
+                <div className="text-sm text-gray-700">They're losing $10K-50K/month from missed calls. You're showing them how to capture that. You're the hero, not the salesperson.</div>
+              </div>
+              <div className="bg-yellow-50 p-4 rounded-lg">
+                <div className="font-bold text-yellow-700 mb-2">3. Confidence Comes From Action, Not Preparation</div>
+                <div className="text-sm text-gray-700">You won't feel ready. Do it anyway. After 10 demos, you'll be confident. After 50, you'll be unstoppable. Just START.</div>
+              </div>
+              <div className="bg-green-50 p-4 rounded-lg">
+                <div className="font-bold text-green-700 mb-2">4. Your Income is a Direct Result of Your Activity</div>
+                <div className="text-sm text-gray-700">10 contacts/day = $5K/month. 20 contacts/day = $10K/month. Want more money? Do more activity. It's math.</div>
+              </div>
+              <div className="bg-blue-50 p-4 rounded-lg">
+                <div className="font-bold text-blue-700 mb-2">5. Speed Beats Perfection</div>
+                <div className="text-sm text-gray-700">Don't wait for the "perfect" pitch. Imperfect action TODAY beats perfect planning that never happens. Go. Now.</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-r from-purple-600 to-pink-600 text-white p-6 rounded-xl">
+            <div className="font-bold text-2xl mb-4">⚡ Daily Affirmations (Say These Every Morning)</div>
+            <div className="space-y-3 text-lg">
+              <div className="flex items-center gap-3">
+                <CheckCircle className="w-6 h-6 flex-shrink-0" />
+                <div>"I am a revenue-generating machine."</div>
+              </div>
+              <div className="flex items-center gap-3">
+                <CheckCircle className="w-6 h-6 flex-shrink-0" />
+                <div>"Every 'no' brings me closer to 'yes'."</div>
+              </div>
+              <div className="flex items-center gap-3">
+                <CheckCircle className="w-6 h-6 flex-shrink-0" />
+                <div>"I help businesses make more money. They need me."</div>
+              </div>
+              <div className="flex items-center gap-3">
+                <CheckCircle className="w-6 h-6 flex-shrink-0" />
+                <div>"I will hit my 3 clients in 10 days, no matter what."</div>
+              </div>
+              <div className="flex items-center gap-3">
+                <CheckCircle className="w-6 h-6 flex-shrink-0" />
+                <div>"I'm building life-changing wealth in 60 days."</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-gray-900 text-white p-6 rounded-xl">
+            <div className="font-bold text-2xl mb-4">🔥 When You Want to Quit (You Will)</div>
+            <div className="space-y-4 text-sm">
+              <div className="bg-red-900 p-4 rounded-lg">
+                <div className="font-bold mb-2">Day 3: "This is too hard, no one's buying"</div>
+                <div className="opacity-90">Normal. You're learning. Push through. Day 5 gets easier. Day 10 you'll close your first deal and feel like a god.</div>
+              </div>
+              <div className="bg-orange-900 p-4 rounded-lg">
+                <div className="font-bold mb-2">Week 2: "I'm not hitting my numbers"</div>
+                <div className="opacity-90">Ask for help. Team call. Role-play with someone better than you. Adjust your pitch. Don't quit.</div>
+              </div>
+              <div className="bg-yellow-900 p-4 rounded-lg">
+                <div className="font-bold mb-2">Week 4: "I'm tired, I need a break"</div>
+                <div className="opacity-90">You've made $30K-50K so far. The finish line is visible. 30 more days = $200K more. Rest when you're rich.</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-r from-green-500 to-emerald-600 text-white p-6 rounded-xl">
+            <div className="font-bold text-2xl mb-3">🏆 Remember Why You're Here</div>
+            <div className="text-lg opacity-90 mb-4">You're not doing this for fun. You're doing this to change your life.</div>
+            <div className="grid grid-cols-3 gap-4 text-sm">
+              <div className="bg-white/20 p-3 rounded-lg text-center">
+                <div className="text-2xl mb-1">💰</div>
+                <div className="font-semibold">Financial Freedom</div>
+              </div>
+              <div className="bg-white/20 p-3 rounded-lg text-center">
+                <div className="text-2xl mb-1">👨‍👩‍👧‍👦</div>
+                <div className="font-semibold">Provide for Family</div>
+              </div>
+              <div className="bg-white/20 p-3 rounded-lg text-center">
+                <div className="text-2xl mb-1">🚀</div>
+                <div className="font-semibold">Prove You Can</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )
+    },
+    {
+      title: "60-Day Financial Projection",
+      subtitle: "Watch Your Money Grow Week by Week",
+      icon: <TrendingUp className="w-20 h-20" />,
+      gradient: "from-green-500 to-emerald-600",
+      content: (
+        <div className="space-y-6">
+          <div className="bg-gradient-to-r from-green-600 to-emerald-600 text-white p-8 rounded-xl text-center">
+            <div className="text-5xl font-black mb-3">$560,000</div>
+            <div className="text-2xl mb-2">Total Team Revenue in 60 Days</div>
+            <div className="text-lg opacity-90">Here's exactly how we get there...</div>
+          </div>
+
+          <div className="bg-white border-2 border-gray-200 rounded-xl overflow-hidden">
             <table className="w-full text-sm">
-              <thead className="bg-gray-100">
+              <thead className="bg-gradient-to-r from-blue-500 to-indigo-500 text-white">
                 <tr>
                   <th className="px-4 py-3 text-left">Week</th>
                   <th className="px-4 py-3 text-left">Market</th>
@@ -305,710 +1526,328 @@ export default function NeuraTalkBattlePlan() {
               </thead>
               <tbody className="divide-y divide-gray-200">
                 <tr className="bg-green-50">
-                  <td className="px-4 py-3">1-2</td>
+                  <td className="px-4 py-3 font-semibold">1-2</td>
                   <td className="px-4 py-3">🇪🇬 Egypt</td>
-                  <td className="px-4 py-3">30 clients × $5K</td>
-                  <td className="px-4 py-3 text-right font-semibold">$150K</td>
-                  <td className="px-4 py-3 text-right font-semibold">$150K</td>
-                </tr>
-                <tr className="bg-blue-50">
-                  <td className="px-4 py-3">3-4</td>
-                  <td className="px-4 py-3">🇦🇪 UAE</td>
-                  <td className="px-4 py-3">12 clients × $20K</td>
-                  <td className="px-4 py-3 text-right font-semibold">$240K</td>
-                  <td className="px-4 py-3 text-right font-semibold">$390K</td>
-                </tr>
-                <tr className="bg-purple-50">
-                  <td className="px-4 py-3">3-4</td>
-                  <td className="px-4 py-3">🇸🇦 KSA</td>
-                  <td className="px-4 py-3">8 clients × $25K</td>
-                  <td className="px-4 py-3 text-right font-semibold">$200K</td>
-                  <td className="px-4 py-3 text-right font-semibold">$590K</td>
+                  <td className="px-4 py-3">7 clients @ $5K</td>
+                  <td className="px-4 py-3 text-right font-bold text-green-600">$35K</td>
+                  <td className="px-4 py-3 text-right font-bold">$35K</td>
                 </tr>
                 <tr className="bg-orange-50">
-                  <td className="px-4 py-3">5-8</td>
-                  <td className="px-4 py-3">🌍 All Markets</td>
-                  <td className="px-4 py-3">2-3 Whale deals</td>
-                  <td className="px-4 py-3 text-right font-semibold">$150K+</td>
-                  <td className="px-4 py-3 text-right font-semibold text-lg">$740K+</td>
+                  <td className="px-4 py-3 font-semibold">1-2</td>
+                  <td className="px-4 py-3">🇹🇷 Turkey</td>
+                  <td className="px-4 py-3">2 clients @ $4K</td>
+                  <td className="px-4 py-3 text-right font-bold text-orange-600">$8K</td>
+                  <td className="px-4 py-3 text-right font-bold">$43K</td>
+                </tr>
+                <tr className="bg-purple-50">
+                  <td className="px-4 py-3 font-semibold">1-2</td>
+                  <td className="px-4 py-3">🇸🇾 Syria</td>
+                  <td className="px-4 py-3">2 clients @ $3K</td>
+                  <td className="px-4 py-3 text-right font-bold text-purple-600">$6K</td>
+                  <td className="px-4 py-3 text-right font-bold">$49K</td>
+                </tr>
+                <tr className="bg-indigo-50">
+                  <td className="px-4 py-3 font-semibold">1-2</td>
+                  <td className="px-4 py-3">🇦🇹 Vienna</td>
+                  <td className="px-4 py-3">1 client @ $5.5K</td>
+                  <td className="px-4 py-3 text-right font-bold text-indigo-600">$5.5K</td>
+                  <td className="px-4 py-3 text-right font-bold">$54.5K</td>
+                </tr>
+                <tr className="bg-yellow-50">
+                  <td className="px-4 py-3 font-semibold">1-2</td>
+                  <td className="px-4 py-3">👑 Leader</td>
+                  <td className="px-4 py-3">1 Egypt whale</td>
+                  <td className="px-4 py-3 text-right font-bold text-yellow-600">$10K</td>
+                  <td className="px-4 py-3 text-right font-bold bg-yellow-200">$64.5K</td>
+                </tr>
+                <tr className="bg-white h-2"></tr>
+                <tr className="bg-green-50">
+                  <td className="px-4 py-3 font-semibold">3-4</td>
+                  <td className="px-4 py-3">🇪🇬 Egypt</td>
+                  <td className="px-4 py-3">14 clients @ $5K</td>
+                  <td className="px-4 py-3 text-right font-bold text-green-600">$70K</td>
+                  <td className="px-4 py-3 text-right font-bold">$134.5K</td>
+                </tr>
+                <tr className="bg-orange-50">
+                  <td className="px-4 py-3 font-semibold">3-4</td>
+                  <td className="px-4 py-3">🇹🇷 Turkey</td>
+                  <td className="px-4 py-3">6 clients @ $4K</td>
+                  <td className="px-4 py-3 text-right font-bold text-orange-600">$24K</td>
+                  <td className="px-4 py-3 text-right font-bold">$158.5K</td>
+                </tr>
+                <tr className="bg-purple-50">
+                  <td className="px-4 py-3 font-semibold">3-4</td>
+                  <td className="px-4 py-3">🇸🇾 Syria</td>
+                  <td className="px-4 py-3">4 clients @ $3K</td>
+                  <td className="px-4 py-3 text-right font-bold text-purple-600">$12K</td>
+                  <td className="px-4 py-3 text-right font-bold">$170.5K</td>
+                </tr>
+                <tr className="bg-indigo-50">
+                  <td className="px-4 py-3 font-semibold">3-4</td>
+                  <td className="px-4 py-3">🇦🇹 Vienna</td>
+                  <td className="px-4 py-3">4 clients @ $5.5K</td>
+                  <td className="px-4 py-3 text-right font-bold text-indigo-600">$22K</td>
+                  <td className="px-4 py-3 text-right font-bold">$192.5K</td>
+                </tr>
+                <tr className="bg-yellow-50">
+                  <td className="px-4 py-3 font-semibold">3-4</td>
+                  <td className="px-4 py-3">👑 Leader</td>
+                  <td className="px-4 py-3">1 Egypt whale</td>
+                  <td className="px-4 py-3 text-right font-bold text-yellow-600">$15K</td>
+                  <td className="px-4 py-3 text-right font-bold bg-yellow-200">$207.5K</td>
+                </tr>
+                <tr className="bg-white h-2"></tr>
+                <tr className="bg-blue-50">
+                  <td className="px-4 py-3 font-semibold">5-6</td>
+                  <td className="px-4 py-3">🇸🇦 KSA</td>
+                  <td className="px-4 py-3">5 clients @ $23K avg</td>
+                  <td className="px-4 py-3 text-right font-bold text-blue-600">$115K</td>
+                  <td className="px-4 py-3 text-right font-bold">$322.5K</td>
+                </tr>
+                <tr className="bg-green-50">
+                  <td className="px-4 py-3 font-semibold">5-6</td>
+                  <td className="px-4 py-3">🇪🇬 Egypt</td>
+                  <td className="px-4 py-3">8 clients @ $5K</td>
+                  <td className="px-4 py-3 text-right font-bold text-green-600">$40K</td>
+                  <td className="px-4 py-3 text-right font-bold">$362.5K</td>
+                </tr>
+                <tr className="bg-orange-50">
+                  <td className="px-4 py-3 font-semibold">5-6</td>
+                  <td className="px-4 py-3">🌍 Remote (All)</td>
+                  <td className="px-4 py-3">Turkey/Syria/Vienna</td>
+                  <td className="px-4 py-3 text-right font-bold text-orange-600">$58K</td>
+                  <td className="px-4 py-3 text-right font-bold bg-orange-200">$420.5K</td>
+                </tr>
+                <tr className="bg-white h-2"></tr>
+                <tr className="bg-blue-50">
+                  <td className="px-4 py-3 font-semibold">7-8</td>
+                  <td className="px-4 py-3">🇸🇦 KSA</td>
+                  <td className="px-4 py-3">4 clients @ $22.5K avg</td>
+                  <td className="px-4 py-3 text-right font-bold text-blue-600">$90K</td>
+                  <td className="px-4 py-3 text-right font-bold">$510.5K</td>
+                </tr>
+                <tr className="bg-green-50">
+                  <td className="px-4 py-3 font-semibold">7-8</td>
+                  <td className="px-4 py-3">🇪🇬 Egypt</td>
+                  <td className="px-4 py-3">4 clients @ $5K</td>
+                  <td className="px-4 py-3 text-right font-bold text-green-600">$20K</td>
+                  <td className="px-4 py-3 text-right font-bold">$530.5K</td>
+                </tr>
+                <tr className="bg-orange-50">
+                  <td className="px-4 py-3 font-semibold">7-8</td>
+                  <td className="px-4 py-3">🌍 Remote (All)</td>
+                  <td className="px-4 py-3">Turkey/Syria/Vienna</td>
+                  <td className="px-4 py-3 text-right font-bold text-orange-600">$29K</td>
+                  <td className="px-4 py-3 text-right font-bold bg-green-200">$559.5K</td>
                 </tr>
               </tbody>
+              <tfoot className="bg-gradient-to-r from-green-600 to-emerald-600 text-white">
+                <tr>
+                  <td className="px-4 py-4 font-bold text-lg" colSpan="3">TOTAL 60-DAY REVENUE</td>
+                  <td className="px-4 py-4 text-right font-bold text-2xl" colSpan="2">$559,500</td>
+                </tr>
+              </tfoot>
             </table>
           </div>
 
-          <div className="grid grid-cols-2 gap-4">
-            <div className="bg-gradient-to-br from-green-500 to-emerald-600 p-6 rounded-xl text-white">
-              <div className="text-sm opacity-90 mb-1">Conservative (Base Plan)</div>
-              <div className="text-3xl font-bold">$590K</div>
-              <div className="text-sm mt-2 opacity-90">Without whale deals</div>
-            </div>
-            <div className="bg-gradient-to-br from-orange-500 to-red-600 p-6 rounded-xl text-white">
-              <div className="text-sm opacity-90 mb-1">Aggressive (With Whales)</div>
-              <div className="text-3xl font-bold">$740K+</div>
-              <div className="text-sm mt-2 opacity-90">With 2-3 enterprise deals</div>
-            </div>
-          </div>
-
-          <div className="bg-gray-100 p-6 rounded-lg">
-            <div className="font-bold text-xl mb-3">Profit Margins:</div>
-            <div className="space-y-2 text-sm">
-              <div className="flex justify-between">
-                <span>Total Revenue (Conservative):</span>
-                <span className="font-semibold">$590,000</span>
-              </div>
-              <div className="flex justify-between">
-                <span>Total Costs (API, travel, ops):</span>
-                <span className="font-semibold text-red-600">-$161,000</span>
-              </div>
-              <div className="flex justify-between border-t-2 border-gray-300 pt-2 mt-2">
-                <span className="font-bold text-lg">NET PROFIT:</span>
-                <span className="font-bold text-lg text-green-600">$429,000</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      )
-    },
-    {
-      title: "Pricing Structure",
-      subtitle: "Annual Contracts - Lock in Today's AI Pricing",
-      icon: <DollarSign className="w-16 h-16" />,
-      content: (
-        <div className="space-y-4">
-          <div className="bg-yellow-50 border-l-4 border-yellow-500 p-4 mb-4">
-            <div className="font-bold text-yellow-800">CRITICAL: AI costs are rising. Annual contracts protect our margins!</div>
-          </div>
-
-          <div className="grid grid-cols-3 gap-4">
-            <div className="bg-white border-2 border-green-500 rounded-lg p-4">
-              <div className="text-green-600 font-bold text-lg mb-3">🇪🇬 EGYPT</div>
-              <div className="space-y-2 text-sm">
-                <div className="border-b pb-2">
-                  <div className="font-semibold">Complete Package</div>
-                  <div className="text-2xl font-bold text-green-600">$5,000/year</div>
-                  <div className="text-xs text-gray-600">EGP 250,000</div>
-                </div>
-                <div className="space-y-1 text-xs">
-                  <div>✅ WhatsApp Bot (unlimited)</div>
-                  <div>✅ Voice AI (1,500 calls/month)</div>
-                  <div>✅ Arabic + English</div>
-                  <div>✅ 48-hour setup</div>
-                </div>
-                <div className="pt-2 border-t">
-                  <div className="text-xs text-gray-600">Your cost: $1,500/year</div>
-                  <div className="font-bold text-green-600">Profit: $3,500</div>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white border-2 border-blue-500 rounded-lg p-4">
-              <div className="text-blue-600 font-bold text-lg mb-3">🇦🇪 UAE</div>
-              <div className="space-y-2 text-sm">
-                <div className="border-b pb-2">
-                  <div className="font-semibold">Professional Package</div>
-                  <div className="text-2xl font-bold text-blue-600">$20,000/year</div>
-                  <div className="text-xs text-gray-600">AED 73,400</div>
-                </div>
-                <div className="space-y-1 text-xs">
-                  <div>✅ WhatsApp Bot (unlimited)</div>
-                  <div>✅ Voice AI (5,000 calls/month)</div>
-                  <div>✅ Multi-language (up to 3)</div>
-                  <div>✅ CRM integration</div>
-                  <div>✅ Priority support</div>
-                </div>
-                <div className="pt-2 border-t">
-                  <div className="text-xs text-gray-600">Your cost: $5,000/year</div>
-                  <div className="font-bold text-blue-600">Profit: $15,000</div>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white border-2 border-purple-500 rounded-lg p-4">
-              <div className="text-purple-600 font-bold text-lg mb-3">🇸🇦 KSA</div>
-              <div className="space-y-2 text-sm">
-                <div className="border-b pb-2">
-                  <div className="font-semibold">Enterprise Package</div>
-                  <div className="text-2xl font-bold text-purple-600">$25,000/year</div>
-                  <div className="text-xs text-gray-600">SAR 93,750</div>
-                </div>
-                <div className="space-y-1 text-xs">
-                  <div>✅ WhatsApp Bot (unlimited)</div>
-                  <div>✅ Voice AI (8,000 calls/month)</div>
-                  <div>✅ Multi-language (up to 5)</div>
-                  <div>✅ Custom integrations</div>
-                  <div>✅ White-label option</div>
-                  <div>✅ Dedicated manager</div>
-                </div>
-                <div className="pt-2 border-t">
-                  <div className="text-xs text-gray-600">Your cost: $7,000/year</div>
-                  <div className="font-bold text-purple-600">Profit: $18,000</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-gradient-to-r from-orange-500 to-red-500 text-white p-6 rounded-xl">
-            <div className="font-bold text-xl mb-2">Whale/Enterprise Tier</div>
-            <div className="grid grid-cols-2 gap-4 text-sm">
-              <div>
-                <div className="opacity-90">For: Hospital chains, hotel groups, luxury retail</div>
-                <div className="text-2xl font-bold mt-2">$50K - $150K/year</div>
-              </div>
-              <div>
-                <div className="opacity-90">Includes:</div>
-                <div className="space-y-1 mt-2">
-                  <div>✅ Unlimited everything</div>
-                  <div>✅ Multi-location support</div>
-                  <div>✅ Custom AI training</div>
-                  <div>✅ Advanced analytics</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      )
-    },
-    {
-      title: "Daily Execution Playbook",
-      subtitle: "What Each Team Member Does Every Single Day",
-      icon: <Calendar className="w-16 h-16" />,
-      content: (
-        <div className="space-y-4">
-          <div className="grid grid-cols-3 gap-4">
-            <div className="bg-green-50 border border-green-200 rounded-lg p-4">
-              <div className="font-bold text-green-700 mb-3">🇪🇬 EGYPT DAILY</div>
-              <div className="space-y-2 text-xs">
-                <div className="flex items-start gap-2">
-                  <div className="font-semibold min-w-16">9-11 AM:</div>
-                  <div>Visit 5 businesses with tablet demo</div>
-                </div>
-                <div className="flex items-start gap-2">
-                  <div className="font-semibold min-w-16">11-1 PM:</div>
-                  <div>Follow up yesterday's demos, close deals</div>
-                </div>
-                <div className="flex items-start gap-2">
-                  <div className="font-semibold min-w-16">2-4 PM:</div>
-                  <div>Visit 5 more businesses</div>
-                </div>
-                <div className="flex items-start gap-2">
-                  <div className="font-semibold min-w-16">4-6 PM:</div>
-                  <div>Collect payments, set up new clients</div>
-                </div>
-                <div className="flex items-start gap-2">
-                  <div className="font-semibold min-w-16">Evening:</div>
-                  <div>WhatsApp follow-ups, prep tomorrow's list</div>
-                </div>
-              </div>
-              <div className="mt-3 pt-3 border-t border-green-200">
-                <div className="font-bold text-green-700">Daily Goal: 2-3 closes</div>
-              </div>
-            </div>
-
-            <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-              <div className="font-bold text-blue-700 mb-3">🇦🇪 UAE DAILY</div>
-              <div className="space-y-2 text-xs">
-                <div className="flex items-start gap-2">
-                  <div className="font-semibold min-w-16">9-11 AM:</div>
-                  <div>LinkedIn outreach (20 connections/day)</div>
-                </div>
-                <div className="flex items-start gap-2">
-                  <div className="font-semibold min-w-16">11-1 PM:</div>
-                  <div>Cold calls to warm leads (15 calls)</div>
-                </div>
-                <div className="flex items-start gap-2">
-                  <div className="font-semibold min-w-16">2-4 PM:</div>
-                  <div>Zoom demos (2-3 scheduled)</div>
-                </div>
-                <div className="flex items-start gap-2">
-                  <div className="font-semibold min-w-16">4-6 PM:</div>
-                  <div>Follow-ups, proposal sending</div>
-                </div>
-                <div className="flex items-start gap-2">
-                  <div className="font-semibold min-w-16">Evening:</div>
-                  <div>Book demos for tomorrow</div>
-                </div>
-              </div>
-              <div className="mt-3 pt-3 border-t border-blue-200">
-                <div className="font-bold text-blue-700">Daily Goal: 1 close ($20K)</div>
-              </div>
-            </div>
-
-            <div className="bg-purple-50 border border-purple-200 rounded-lg p-4">
-              <div className="font-bold text-purple-700 mb-3">🇸🇦 KSA DAILY</div>
-              <div className="space-y-2 text-xs">
-                <div className="flex items-start gap-2">
-                  <div className="font-semibold min-w-16">9-11 AM:</div>
-                  <div>Research enterprise prospects</div>
-                </div>
-                <div className="flex items-start gap-2">
-                  <div className="font-semibold min-w-16">11-1 PM:</div>
-                  <div>LinkedIn + email outreach (15 contacts)</div>
-                </div>
-                <div className="flex items-start gap-2">
-                  <div className="font-semibold min-w-16">2-4 PM:</div>
-                  <div>High-value demos (pre-qualified only)</div>
-                </div>
-                <div className="flex items-start gap-2">
-                  <div className="font-semibold min-w-16">4-6 PM:</div>
-                  <div>Proposal customization, negotiations</div>
-                </div>
-                <div className="flex items-start gap-2">
-                  <div className="font-semibold min-w-16">Evening:</div>
-                  <div>Warm intro requests, partnership outreach</div>
-                </div>
-              </div>
-              <div className="mt-3 pt-3 border-t border-purple-200">
-                <div className="font-bold text-purple-700">Daily Goal: 1 close ($25K)</div>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-gray-900 text-white p-6 rounded-xl">
-            <div className="font-bold text-xl mb-4">Team Coordination (CRITICAL)</div>
-            <div className="grid grid-cols-2 gap-6 text-sm">
-              <div>
-                <div className="font-semibold mb-2">Daily Stand-up (9 AM Cairo time):</div>
-                <div className="space-y-1 opacity-90">
-                  <div>• Each person reports yesterday's results</div>
-                  <div>• Share what worked / what didn't</div>
-                  <div>• Get help on stuck deals</div>
-                  <div>• Set today's targets</div>
-                </div>
-              </div>
-              <div>
-                <div className="font-semibold mb-2">End-of-Day Report (7 PM):</div>
-                <div className="space-y-1 opacity-90">
-                  <div>• Deals closed today + value</div>
-                  <div>• Demos booked for tomorrow</div>
-                  <div>• Blockers / help needed</div>
-                  <div>• Tomorrow's action plan</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      )
-    },
-    {
-      title: "Sales Scripts & Objection Handling",
-      subtitle: "Exactly What to Say to Close Deals",
-      icon: <Zap className="w-16 h-16" />,
-      content: (
-        <div className="space-y-4">
-          <div className="bg-gradient-to-r from-green-600 to-emerald-600 text-white p-4 rounded-lg">
-            <div className="font-bold text-lg mb-2">🇪🇬 EGYPT SCRIPT (10-minute close)</div>
-            <div className="text-sm space-y-2 bg-white/10 p-3 rounded">
-              <div><span className="font-semibold">Opening:</span> "I help pharmacies capture every missed call. You're losing about 20 calls a day - that's 50,000 EGP/month walking away. Can I show you a 2-minute demo?"</div>
-              <div><span className="font-semibold">After demo:</span> "So this captures 100% of your calls, 24/7, in Arabic and English. Cost is 250,000 EGP for the year - that's 20,000/month. You're currently losing 50,000/month. This pays for itself in week 1."</div>
-              <div><span className="font-semibold">Close:</span> "I'm installing for 3 pharmacies this week. I have Thursday and Friday slots. Which works better for you?"</div>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-2 gap-4">
-            <div className="bg-blue-50 border border-blue-200 p-4 rounded-lg">
-              <div className="font-bold text-blue-700 mb-2">🇦🇪 UAE SCRIPT</div>
-              <div className="text-xs space-y-2">
-                <div><span className="font-semibold">LinkedIn opener:</span> "Hi [Name], I noticed [Company] serves premium clients in Dubai. We help similar businesses capture 100% of customer inquiries with AI. Handling 3,000+ calls/day for 30+ MENA businesses. Worth a 15-min demo?"</div>
-                <div><span className="font-semibold">Demo close:</span> "We're expanding in UAE - taking 15 clients this quarter at AED 73,400/year. That's locked-in pricing before AI costs increase. Want to be one of them?"</div>
-              </div>
-            </div>
-
-            <div className="bg-purple-50 border border-purple-200 p-4 rounded-lg">
-              <div className="font-bold text-purple-700 mb-2">🇸🇦 KSA SCRIPT</div>
-              <div className="text-xs space-y-2">
-                <div><span className="font-semibold">Enterprise opener:</span> "We serve 40+ businesses across MENA, handling 5,000+ daily customer interactions. Built on OpenAI infrastructure. I'd love to show you how we can transform your customer service."</div>
-                <div><span className="font-semibold">Premium close:</span> "Investment is SAR 93,750 annually - locks in today's AI pricing. Our Saudi clients see 10-20x ROI in month 1. Shall we start the setup process?"</div>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-red-50 border-l-4 border-red-500 p-4">
-            <div className="font-bold text-red-800 mb-3">Common Objections & Responses:</div>
-            <div className="space-y-3 text-sm">
-              <div>
-                <div className="font-semibold text-red-700">"Let me think about it"</div>
-                <div className="text-gray-700">"Of course. What specifically do you need to think about - the price, the technology, or timing? [Wait for answer, handle real objection]"</div>
-              </div>
-              <div>
-                <div className="font-semibold text-red-700">"Too expensive"</div>
-                <div className="text-gray-700">"I understand. Let's look at what you're losing: [Calculate their loss]. You're spending [X] to save [10X]. That's not an expense, it's an investment with guaranteed ROI."</div>
-              </div>
-              <div>
-                <div className="font-semibold text-red-700">"We already have staff"</div>
-                <div className="text-gray-700">"Perfect! This doesn't replace them - it handles overflow and after-hours. Your staff can focus on in-person customers while the AI captures every call they miss. When do they leave? 5 PM? That's when you lose the most calls."</div>
-              </div>
-              <div>
-                <div className="font-semibold text-red-700">"Need to discuss with partner/boss"</div>
-                <div className="text-gray-700">"Makes sense. Let's get them on a quick call right now. I have 10 minutes. [If not available] When can all decision-makers meet? I'll block my calendar."</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      )
-    },
-    {
-      title: "Success Metrics & Accountability",
-      subtitle: "How We Track Progress & Stay on Target",
-      icon: <Target className="w-16 h-16" />,
-      content: (
-        <div className="space-y-4">
           <div className="bg-gradient-to-r from-purple-600 to-pink-600 text-white p-6 rounded-xl">
-            <div className="font-bold text-2xl mb-2">Weekly Revenue Targets</div>
-            <div className="grid grid-cols-4 gap-4 mt-4">
-              <div className="bg-white/20 p-3 rounded">
-                <div className="text-sm opacity-90">Week 1-2</div>
-                <div className="text-2xl font-bold">$150K</div>
-                <div className="text-xs opacity-75">Egypt launch</div>
+            <div className="font-bold text-2xl mb-4">💰 Your Personal Commission Projection</div>
+            <div className="grid grid-cols-3 gap-4">
+              <div className="bg-white/20 p-4 rounded-lg text-center">
+                <div className="text-sm opacity-90 mb-1">If Egypt (18 clients)</div>
+                <div className="text-3xl font-bold">$9,000</div>
+                <div className="text-xs opacity-75 mt-1">10% of $90K</div>
               </div>
-              <div className="bg-white/20 p-3 rounded">
-                <div className="text-sm opacity-90">Week 3-4</div>
-                <div className="text-2xl font-bold">$440K</div>
-                <div className="text-xs opacity-75">Gulf expansion</div>
+              <div className="bg-white/20 p-4 rounded-lg text-center">
+                <div className="text-sm opacity-90 mb-1">If KSA Mission</div>
+                <div className="text-3xl font-bold">$20,500</div>
+                <div className="text-xs opacity-75 mt-1">10% of $205K</div>
               </div>
-              <div className="bg-white/20 p-3 rounded">
-                <div className="text-sm opacity-90">Week 5-6</div>
-                <div className="text-2xl font-bold">$590K</div>
-                <div className="text-xs opacity-75">Whale hunting</div>
-              </div>
-              <div className="bg-white/20 p-3 rounded">
-                <div className="text-sm opacity-90">Week 7-8</div>
-                <div className="text-2xl font-bold">$740K+</div>
-                <div className="text-xs opacity-75">Close whales</div>
+              <div className="bg-white/20 p-4 rounded-lg text-center">
+                <div className="text-sm opacity-90 mb-1">+ Base Salary</div>
+                <div className="text-3xl font-bold">$1,000</div>
+                <div className="text-xs opacity-75 mt-1">$500 × 2 months</div>
               </div>
             </div>
           </div>
 
-          <div className="grid grid-cols-3 gap-4">
-            <div className="bg-white border-2 border-green-500 rounded-lg p-4">
-              <div className="font-bold text-green-600 mb-3">🇪🇬 EGYPT KPIs</div>
-              <div className="space-y-2 text-sm">
-                <div className="flex justify-between">
-                  <span>Daily outreach:</span>
-                  <span className="font-semibold">10 businesses</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Daily demos:</span>
-                  <span className="font-semibold">10 shown</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Daily closes:</span>
-                  <span className="font-semibold">2-3 deals</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Weekly target:</span>
-                  <span className="font-semibold">15 clients</span>
-                </div>
-                <div className="flex justify-between border-t pt-2 mt-2">
-                  <span className="font-bold">Weekly revenue:</span>
-                  <span className="font-bold text-green-600">$75K</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white border-2 border-blue-500 rounded-lg p-4">
-              <div className="font-bold text-blue-600 mb-3">🇦🇪 UAE KPIs</div>
-              <div className="space-y-2 text-sm">
-                <div className="flex justify-between">
-                  <span>Daily outreach:</span>
-                  <span className="font-semibold">20 contacts</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Daily demos:</span>
-                  <span className="font-semibold">2-3 booked</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Daily closes:</span>
-                  <span className="font-semibold">1 deal</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Weekly target:</span>
-                  <span className="font-semibold">6 clients</span>
-                </div>
-                <div className="flex justify-between border-t pt-2 mt-2">
-                  <span className="font-bold">Weekly revenue:</span>
-                  <span className="font-bold text-blue-600">$120K</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white border-2 border-purple-500 rounded-lg p-4">
-              <div className="font-bold text-purple-600 mb-3">🇸🇦 KSA KPIs</div>
-              <div className="space-y-2 text-sm">
-                <div className="flex justify-between">
-                  <span>Daily outreach:</span>
-                  <span className="font-semibold">15 contacts</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Daily demos:</span>
-                  <span className="font-semibold">1-2 booked</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Daily closes:</span>
-                  <span className="font-semibold">1 deal</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Weekly target:</span>
-                  <span className="font-semibold">4 clients</span>
-                </div>
-                <div className="flex justify-between border-t pt-2 mt-2">
-                  <span className="font-bold">Weekly revenue:</span>
-                  <span className="font-bold text-purple-600">$100K</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-gray-900 text-white p-6 rounded-xl">
-            <div className="font-bold text-xl mb-4">Red Flags & Course Correction</div>
-            <div className="grid grid-cols-2 gap-6 text-sm">
-              <div>
-                <div className="font-semibold text-red-400 mb-2">🚨 IF we're behind target:</div>
-                <div className="space-y-1 opacity-90">
-                  <div>• Egypt: Lower price to $3K for quick wins</div>
-                  <div>• UAE/KSA: Focus on smaller deals ($10-15K)</div>
-                  <div>• All: Increase daily outreach by 50%</div>
-                  <div>• Emergency: Offer payment plans (50% now, 50% in 30 days)</div>
-                </div>
-              </div>
-              <div>
-                <div className="font-semibold text-green-400 mb-2">✅ IF we're ahead of target:</div>
-                <div className="space-y-1 opacity-90">
-                  <div>• Raise prices by 20% for new clients</div>
-                  <div>• Focus ONLY on whale hunting</div>
-                  <div>• Build case studies for next quarter</div>
-                  <div>• Start hiring for expansion to Kuwait/Qatar</div>
-                </div>
-              </div>
+          <div className="bg-yellow-50 border-l-4 border-yellow-500 p-4">
+            <div className="font-bold text-yellow-800 text-lg mb-2">📈 What This Money Means For You:</div>
+            <div className="text-sm text-yellow-900 space-y-1">
+              <div>✅ <strong>$10,000</strong> = Change your entire year. Pay off debt. Help family. Invest.</div>
+              <div>✅ <strong>$20,000</strong> = Change your life. Move. Start a business. True freedom.</div>
+              <div>✅ <strong>$460K total profit</strong> = Change the company forever. Expand. Hire. Dominate.</div>
             </div>
           </div>
         </div>
       )
     },
     {
-      title: "Investment & Resources",
-      subtitle: "What We Need to Execute This Plan",
-      icon: <DollarSign className="w-16 h-16" />,
+      title: "Let's Fucking GO! 🚀",
+      subtitle: "Your Mission Starts NOW",
+      icon: <Rocket className="w-24 h-24" />,
+      gradient: "from-orange-500 via-red-500 to-pink-500",
       content: (
-        <div className="space-y-4">
-          <div className="bg-orange-50 border-l-4 border-orange-500 p-4">
-            <div className="font-bold text-orange-800 mb-2">Total Investment Required: $15,000</div>
-            <div className="text-sm text-orange-700">This covers all 60 days. We'll be profitable by Week 2.</div>
-          </div>
-
-          <div className="grid grid-cols-2 gap-4">
-            <div className="bg-white border border-gray-200 rounded-lg p-4">
-              <div className="font-bold mb-3">One-Time Costs:</div>
-              <div className="space-y-2 text-sm">
-                <div className="flex justify-between">
-                  <span>UAE/KSA flights & hotels (2 people × 7 days):</span>
-                  <span className="font-semibold">$6,000</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>UAE/KSA phone numbers (Twilio):</span>
-                  <span className="font-semibold">$100</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Demo equipment (3 tablets):</span>
-                  <span className="font-semibold">$900</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Marketing materials (business cards, etc):</span>
-                  <span className="font-semibold">$500</span>
-                </div>
-                <div className="flex justify-between border-t pt-2 mt-2">
-                  <span className="font-bold">Subtotal:</span>
-                  <span className="font-bold">$7,500</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white border border-gray-200 rounded-lg p-4">
-              <div className="font-bold mb-3">Monthly Operating Costs:</div>
-              <div className="space-y-2 text-sm">
-                <div className="flex justify-between">
-                  <span>API costs (50 clients avg):</span>
-                  <span className="font-semibold">$5,000/mo</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Team incentives (3 people):</span>
-                  <span className="font-semibold">$1,500/mo</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Software/tools (CRM, etc):</span>
-                  <span className="font-semibold">$500/mo</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Misc (transport, meals, etc):</span>
-                  <span className="font-semibold">$500/mo</span>
-                </div>
-                <div className="flex justify-between border-t pt-2 mt-2">
-                  <span className="font-bold">Subtotal (2 months):</span>
-                  <span className="font-bold">$15,000</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-gradient-to-r from-green-600 to-emerald-600 text-white p-6 rounded-xl">
-            <div className="font-bold text-2xl mb-4">ROI Analysis</div>
-            <div className="grid grid-cols-3 gap-6">
-              <div>
-                <div className="text-sm opacity-90">Total Investment</div>
-                <div className="text-3xl font-bold">$15K</div>
-              </div>
-              <div>
-                <div className="text-sm opacity-90">Total Revenue (Conservative)</div>
-                <div className="text-3xl font-bold">$590K</div>
-              </div>
-              <div>
-                <div className="text-sm opacity-90">ROI</div>
-                <div className="text-3xl font-bold">3,833%</div>
-              </div>
-            </div>
-            <div className="mt-4 pt-4 border-t border-white/20">
-              <div className="text-sm opacity-90">Net Profit After All Costs:</div>
-              <div className="text-4xl font-bold">$429,000</div>
-            </div>
-          </div>
-
-          <div className="bg-gray-100 p-6 rounded-lg">
-            <div className="font-bold text-lg mb-3">What Each Team Member Gets:</div>
-            <div className="grid grid-cols-3 gap-4 text-sm">
-              <div>
-                <div className="font-semibold text-green-600">Egypt Lead</div>
-                <div className="mt-2 space-y-1">
-                  <div>Base: $500/month</div>
-                  <div>Commission: 10% of revenue</div>
-                  <div className="font-bold text-green-600">Potential: $15,500 (2 months)</div>
-                </div>
-              </div>
-              <div>
-                <div className="font-semibold text-blue-600">UAE Lead</div>
-                <div className="mt-2 space-y-1">
-                  <div>Base: $500/month</div>
-                  <div>Commission: 10% of revenue</div>
-                  <div className="font-bold text-blue-600">Potential: $25,000 (2 months)</div>
-                </div>
-              </div>
-              <div>
-                <div className="font-semibold text-purple-600">KSA Lead</div>
-                <div className="mt-2 space-y-1">
-                  <div>Base: $500/month</div>
-                  <div>Commission: 10% of revenue</div>
-                  <div className="font-bold text-purple-600">Potential: $21,000 (2 months)</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      )
-    },
-    {
-      title: "LET'S FUCKING GO! 🚀",
-      subtitle: "The Mission Starts NOW",
-      icon: <Award className="w-20 h-20" />,
-      content: (
-        <div className="space-y-6">
-          <div className="bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 text-white p-8 rounded-xl text-center">
-            <div className="text-5xl font-bold mb-4">$590K - $740K</div>
-            <div className="text-2xl mb-2">in 60 Days</div>
-            <div className="text-lg opacity-90">From absolute zero to regional domination</div>
+        <div className="space-y-8">
+          <div className="bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 text-white p-10 rounded-2xl text-center">
+            <div className="text-6xl font-black mb-4">THIS IS IT.</div>
+            <div className="text-3xl mb-4">60 Days to Change Everything</div>
+            <div className="text-xl opacity-90">You have the playbook. You have the team. You have the product.</div>
+            <div className="text-2xl font-bold mt-6">NOW EXECUTE.</div>
           </div>
 
           <div className="grid grid-cols-2 gap-6">
-            <div className="bg-white border-2 border-green-500 rounded-xl p-6">
-              <div className="font-bold text-2xl text-green-600 mb-4">✅ What We Have</div>
+            <div className="bg-white border-4 border-green-500 rounded-xl p-6">
+              <div className="font-bold text-2xl text-green-600 mb-4">✅ What You NOW Have:</div>
               <div className="space-y-2 text-sm">
-                <div>✓ Proven product (AI Voice + WhatsApp)</div>
-                <div>✓ Hungry team ready to execute</div>
-                <div>✓ Clear pricing structure</div>
-                <div>✓ Untapped MENA market</div>
-                <div>✓ First-mover advantage</div>
-                <div>✓ This battle plan</div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                  <div>Pricing strategy (when to hold, when to fold)</div>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                  <div>Target lists (1000+ prospects ready)</div>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                  <div>Team support (never alone)</div>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                  <div>Financial projections (know exactly what you'll make)</div>
+                </div>
               </div>
             </div>
 
-            <div className="bg-white border-2 border-red-500 rounded-xl p-6">
-              <div className="font-bold text-2xl text-red-600 mb-4">🎯 What We Need</div>
+            <div className="bg-white border-4 border-red-500 rounded-xl p-6">
+              <div className="font-bold text-2xl text-red-600 mb-4">🎯 What You MUST Do:</div>
               <div className="space-y-2 text-sm">
-                <div>✓ 100% commitment for 60 days</div>
-                <div>✓ Daily execution (no excuses)</div>
-                <div>✓ $15K investment</div>
-                <div>✓ Trust the process</div>
-                <div>✓ Relentless follow-up</div>
-                <div>✓ HUNGER TO WIN</div>
+                <div className="flex items-start gap-2">
+                  <ArrowRight className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
+                  <div><strong>TODAY:</strong> Read this playbook 2X. Know it by heart.</div>
+                </div>
+                <div className="flex items-start gap-2">
+                  <ArrowRight className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
+                  <div><strong>TOMORROW:</strong> Practice pitch with teammate. 10 reps minimum.</div>
+                </div>
+                <div className="flex items-start gap-2">
+                  <ArrowRight className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
+                  <div><strong>DAY 3:</strong> Make first contact. 10 businesses. No excuses.</div>
+                </div>
+                <div className="flex items-start gap-2">
+                  <ArrowRight className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
+                  <div><strong>DAY 5:</strong> Close your first deal. Taste victory.</div>
+                </div>
+                <div className="flex items-start gap-2">
+                  <ArrowRight className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
+                  <div><strong>DAY 10:</strong> Hit 3 clients. Prove the system works.</div>
+                </div>
+                <div className="flex items-start gap-2">
+                  <ArrowRight className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
+                  <div><strong>DAY 60:</strong> Count your $10K-20K commission. Celebrate.</div>
+                </div>
               </div>
             </div>
           </div>
 
           <div className="bg-gray-900 text-white p-8 rounded-xl">
-            <div className="font-bold text-3xl mb-6 text-center">The 60-Day Challenge</div>
-            <div className="grid grid-cols-4 gap-4 mb-6">
-              <div className="text-center">
-                <div className="text-4xl mb-2">🇪🇬</div>
-                <div className="text-2xl font-bold">30</div>
-                <div className="text-sm opacity-75">Egypt Clients</div>
+            <div className="font-bold text-3xl mb-6 text-center">📋 First 24 Hours Checklist</div>
+            <div className="grid grid-cols-2 gap-6">
+              <div className="space-y-3">
+                <div className="flex items-center gap-3">
+                  <input type="checkbox" className="w-6 h-6" />
+                  <span>Read entire playbook (yes, all of it)</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <input type="checkbox" className="w-6 h-6" />
+                  <span>Save demo phone number to contacts</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <input type="checkbox" className="w-6 h-6" />
+                  <span>Download prospect list for your market</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <input type="checkbox" className="w-6 h-6" />
+                  <span>Join team WhatsApp group</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <input type="checkbox" className="w-6 h-6" />
+                  <span>Test call demo phone yourself (5 times)</span>
+                </div>
               </div>
-              <div className="text-center">
-                <div className="text-4xl mb-2">🇦🇪</div>
-                <div className="text-2xl font-bold">12</div>
-                <div className="text-sm opacity-75">UAE Clients</div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl mb-2">🇸🇦</div>
-                <div className="text-2xl font-bold">8</div>
-                <div className="text-sm opacity-75">KSA Clients</div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl mb-2">🐋</div>
-                <div className="text-2xl font-bold">2-3</div>
-                <div className="text-sm opacity-75">Whale Deals</div>
+              <div className="space-y-3">
+                <div className="flex items-center gap-3">
+                  <input type="checkbox" className="w-6 h-6" />
+                  <span>Practice 60-second pitch (10 reps)</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <input type="checkbox" className="w-6 h-6" />
+                  <span>Role-play objections with teammate</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <input type="checkbox" className="w-6 h-6" />
+                  <span>Set up daily tracking sheet</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <input type="checkbox" className="w-6 h-6" />
+                  <span>Plan tomorrow's route (10 prospects)</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <input type="checkbox" className="w-6 h-6" />
+                  <span>Say affirmations out loud (believe it)</span>
+                </div>
               </div>
             </div>
-            <div className="text-center text-2xl font-bold border-t border-white/20 pt-6">
-              = Total Domination of MENA AI Market
+          </div>
+
+          <div className="bg-gradient-to-r from-green-500 to-emerald-600 text-white p-8 rounded-xl">
+            <div className="text-center mb-6">
+              <div className="text-4xl font-black mb-3">THE PROMISE</div>
+              <div className="text-xl opacity-90">If you follow this playbook EXACTLY for 60 days:</div>
+            </div>
+            <div className="grid grid-cols-3 gap-4 text-center">
+              <div className="bg-white/20 p-6 rounded-lg">
+                <div className="text-5xl mb-2">✅</div>
+                <div className="text-2xl font-bold mb-2">You WILL Close</div>
+                <div className="text-sm opacity-90">3 clients every 10 days minimum</div>
+              </div>
+              <div className="bg-white/20 p-6 rounded-lg">
+                <div className="text-5xl mb-2">💰</div>
+                <div className="text-2xl font-bold mb-2">You WILL Earn</div>
+                <div className="text-sm opacity-90">$5K-$20K in commissions</div>
+              </div>
+              <div className="bg-white/20 p-6 rounded-lg">
+                <div className="text-5xl mb-2">🚀</div>
+                <div className="text-2xl font-bold mb-2">You WILL Prove</div>
+                <div className="text-sm opacity-90">You're a revenue machine</div>
+              </div>
             </div>
           </div>
 
           <div className="bg-yellow-50 border-l-4 border-yellow-500 p-6">
-            <div className="font-bold text-xl text-yellow-800 mb-3">⚡ First 24 Hours Action Items:</div>
-            <div className="space-y-2 text-sm text-yellow-900">
-              <div className="flex items-center gap-2">
-                <input type="checkbox" className="w-4 h-4" />
-                <span>Team meeting - assign countries, review this plan</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <input type="checkbox" className="w-4 h-4" />
-                <span>Egypt lead: List 50 prospects for Week 1</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <input type="checkbox" className="w-4 h-4" />
-                <span>UAE lead: Set up LinkedIn, start outreach</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <input type="checkbox" className="w-4 h-4" />
-                <span>KSA lead: Research enterprise prospects</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <input type="checkbox" className="w-4 h-4" />
-                <span>Order demo tablets & materials</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <input type="checkbox" className="w-4 h-4" />
-                <span>Book UAE/KSA flights for Week 3</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <input type="checkbox" className="w-4 h-4" />
-                <span>Set up daily standup meetings (9 AM)</span>
-              </div>
+            <div className="font-bold text-yellow-800 text-xl mb-3">⚡ Final Words from Your Leader:</div>
+            <div className="text-yellow-900 space-y-3">
+              <p className="text-lg">"I built this playbook because I believe in you. Every word, every strategy, every script—it's all proven. It works."</p>
+              <p className="text-lg">"But here's the truth: This playbook is worthless without YOU. Without your ACTION. Without your HUNGER."</p>
+              <p className="text-lg">"The next 60 days will be hard. You'll want to quit. You'll doubt yourself. You'll hear 'no' a hundred times."</p>
+              <p className="text-lg font-bold">"But if you push through, if you follow this system, if you trust the process..."</p>
+              <p className="text-xl font-black text-yellow-800">"You will change your fucking life."</p>
             </div>
           </div>
 
-          <div className="bg-gradient-to-r from-purple-600 to-pink-600 text-white p-8 rounded-xl text-center">
-            <div className="text-3xl font-bold mb-4">THIS IS NOT A DREAM.</div>
-            <div className="text-xl mb-6">THIS IS THE PLAN.</div>
-            <div className="text-lg opacity-90 mb-6">Every number is realistic. Every strategy is proven. Every day is accounted for.</div>
-            <div className="text-2xl font-bold">NOW EXECUTE. 🔥</div>
+          <div className="bg-gradient-to-r from-purple-600 via-pink-600 to-red-600 text-white p-10 rounded-2xl text-center">
+            <div className="text-5xl font-black mb-4">NOW GO!</div>
+            <div className="text-3xl mb-6">$560,000 is waiting.</div>
+            <div className="text-2xl mb-8">Your family is watching. Your future is calling.</div>
+            <div className="text-6xl mb-6">🔥⚡💰🚀</div>
+            <div className="text-4xl font-black">LET'S. FUCKING. WIN.</div>
+          </div>
+
+          <div className="bg-gray-900 text-white p-6 rounded-xl text-center">
+            <div className="text-sm opacity-75 mb-2">Questions? Stuck? Need help?</div>
+            <div className="text-xl font-bold">Team WhatsApp: Always On</div>
+            <div className="text-sm opacity-75 mt-2">Daily Standup: 8 AM Cairo Time</div>
+            <div className="text-sm opacity-75">We win together. We lose together. Let's win.</div>
           </div>
         </div>
       )
@@ -1019,20 +1858,20 @@ export default function NeuraTalkBattlePlan() {
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 p-8">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white p-8 rounded-2xl mb-8 shadow-2xl">
+        <div className={`bg-gradient-to-r ${slides[activeSlide].gradient} text-white p-8 rounded-2xl mb-8 shadow-2xl`}>
           <div className="flex items-center justify-between">
             <div>
-              <h1 className="text-4xl font-bold mb-2">NeuraTalk Battle Plan</h1>
-              <p className="text-xl opacity-90">60 Days to $500K+ Revenue</p>
+              <h1 className="text-4xl font-bold mb-2">NeuraTalk Sales Machine</h1>
+              <p className="text-xl opacity-90">The Complete Unstoppable Playbook</p>
             </div>
-            <Zap className="w-20 h-20 opacity-80" />
+            {slides[activeSlide].icon}
           </div>
         </div>
 
         {/* Slide Content */}
         <div className="bg-white rounded-2xl shadow-xl p-8 mb-6">
           <div className="flex items-center gap-4 mb-6">
-            <div className="text-indigo-600">
+            <div className={`text-transparent bg-clip-text bg-gradient-to-r ${slides[activeSlide].gradient}`}>
               {slides[activeSlide].icon}
             </div>
             <div>
@@ -1047,7 +1886,7 @@ export default function NeuraTalkBattlePlan() {
         </div>
 
         {/* Navigation */}
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between mb-8">
           <button
             onClick={() => setActiveSlide(Math.max(0, activeSlide - 1))}
             disabled={activeSlide === 0}
@@ -1080,19 +1919,23 @@ export default function NeuraTalkBattlePlan() {
         </div>
 
         {/* Progress Footer */}
-        <div className="mt-8 bg-gray-900 text-white p-6 rounded-xl">
+        <div className="bg-gray-900 text-white p-6 rounded-xl">
           <div className="flex items-center justify-between">
             <div>
-              <div className="text-sm opacity-75 mb-1">Slide Progress</div>
-              <div className="text-2xl font-bold">{activeSlide + 1} / {slides.length}</div>
+              <div className="text-sm opacity-75 mb-1">Your Progress</div>
+              <div className="text-2xl font-bold">Slide {activeSlide + 1} / {slides.length}</div>
             </div>
             <div className="text-right">
-              <div className="text-sm opacity-75 mb-1">Time to Revenue</div>
+              <div className="text-sm opacity-75 mb-1">Mission Duration</div>
               <div className="text-2xl font-bold">60 Days</div>
             </div>
             <div className="text-right">
-              <div className="text-sm opacity-75 mb-1">Target Revenue</div>
-              <div className="text-2xl font-bold text-green-400">$590K - $740K</div>
+              <div className="text-sm opacity-75 mb-1">Your Potential</div>
+              <div className="text-2xl font-bold text-green-400">$5K - $20K</div>
+            </div>
+            <div className="text-right">
+              <div className="text-sm opacity-75 mb-1">Team Revenue Target</div>
+              <div className="text-2xl font-bold text-yellow-400">$560K</div>
             </div>
           </div>
         </div>
@@ -1100,3 +1943,19 @@ export default function NeuraTalkBattlePlan() {
     </div>
   );
 }
+                  <div>Word-for-word sales scripts (no guessing)</div>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                  <div>Demo phone system (instant credibility)</div>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                  <div>Daily schedule (hour-by-hour plan)</div>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                  <div>Objection killers (handle any pushback)</div>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
